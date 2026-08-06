@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="images/thumbnails/ehcastroh_teach_banner_flower_field.png" alt="ehcastroh-teach logo" width="160" />
+  <img src="images/thumbnails/ehcastroh_teach_banner_flower_field.png" alt="ehcastroh-teach logo" width="480" />
 
   # ehcastroh-teach
 
@@ -50,13 +50,16 @@ Contributing / feedback
 
 These materials are actively maintained. If you spot an error or have a suggestion, open an issue on the relevant repository.
 
+Questions about a specific repo belong on that repo's issue tracker. For anything about the organization itself — new topics, collaboration, or general feedback — reach out via LinkedIn or GitHub above.
+
+---
+
 Contact
-<div align="center"> <img src="images/contact/profile_photo.png" alt="ehcastroh" width="120" style="border-radius: 50%;" />
+<div align="center"> <img src="images/thumbnails/no_ghosts_allowed.jpg" alt="ehcastroh" width="120" style="border-radius: 50%;" />
 
 ehcastroh
 
 <a href="https://github.com/ehcastroh">GitHub</a> · <a href="https://www.linkedin.com/in/ehcastroh/">LinkedIn</a></sub> </div>
 </div>
 
-Questions about a specific repo belong on that repo's issue tracker. For anything about the organization itself — new topics, collaboration, or general feedback — reach out via LinkedIn or GitHub above.
-
+---
