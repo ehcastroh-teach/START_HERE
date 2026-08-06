@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="images/thumbnails/ehcastroh_teach_banner_flower_field.png" alt="ehcastroh-teach logo" width="480" />
+  <img src="images/thumbnails/ehcastroh_teach_banner_flower_field.png" alt="ehcastroh-teach logo" width="600" />
 
   # ehcastroh-teach
 
@@ -55,7 +55,7 @@ Questions about a specific repo belong on that repo's issue tracker. For anythin
 ---
 
 Contact
-<div align="center"> <img src="images/thumbnails/no_ghosts_allowed.jpg" alt="ehcastroh" width="120" style="border-radius: 50%;" />
+<div align="center"> <img src="images/thumbnails/ehcastroh.jpg" alt="ehcastroh" width="90" style="border-radius: 50%;" />
 
 ehcastroh
 
