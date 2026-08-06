@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="thumbnail.png" alt="ehcastroh-teach logo" width="160" />
+  <img src="images/thumbnails/thumbnail_start.png" alt="ehcastroh-teach logo" width="160" />
 
   # ehcastroh-teach
 
@@ -12,18 +12,6 @@
 
 This organization hosts teaching repositories used for courses, workshops, and self-paced learning in **AI/ML and data science**. Each repo is scoped to a topic or module and generally includes explanatory notebooks, sample datasets, exercises, and reference solutions.
 
-## Repository conventions
-
-To keep things predictable across repos in this org:
-
-- **Naming** — repos follow `topic-short-name` (e.g. `neural-nets-intro`, `transformer-attention`).
-- **Structure** — most repos include:
-  - `notebooks/` — walkthroughs and exercises (Jupyter)
-  - `data/` — sample or synthetic datasets used in the material
-  - `solutions/` — worked solutions, kept separate from exercises
-  - `README.md` — topic overview, prerequisites, and setup instructions
-- **Environments** — Python-based repos include a `requirements.txt` or `environment.yml` for reproducibility.
-- **Licensing** — teaching content is shared under an open license per-repo (see individual repo `LICENSE` files); check before reuse or redistribution.
 
 ## Getting started
 
@@ -44,7 +32,19 @@ To keep things predictable across repos in this org:
 
 *This table is updated as repositories are migrated into the organization. Replace each `tbd` with the repo name and link once it's moved.*
 
-*(This list will grow as repositories are added — check individual repos for the current catalog.)*
+## Repository conventions
+
+To keep things predictable across repos in this org:
+
+- **Naming** — repos follow `topic-short-name` (e.g. `neural-nets-intro`, `transformer-attention`).
+- **Structure** — most repos include:
+  - `notebooks/` — walkthroughs and exercises (Jupyter)
+  - `data/` — sample or synthetic datasets used in the material
+  - `solutions/` — worked solutions, kept separate from exercises
+  - `README.md` — topic overview, prerequisites, and setup instructions
+- **Environments** — Python-based repos include a `requirements.txt` or `environment.yml` for reproducibility.
+- **Licensing** — teaching content is shared under an open license per-repo (see individual repo `LICENSE` files); check before reuse or redistribution.
+
 
 ## Contributing / feedback
 
