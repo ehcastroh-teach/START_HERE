@@ -1,16 +1,16 @@
 <div align="center">
-  <img src="images/thumbnails/thumbnail_start.png" alt="ehcastroh-teach logo" width="160" />
+  <img src="images/thumbnails/ehcastroh_teach_banner_flower_field.png" alt="ehcastroh-teach logo" width="160" />
 
   # ehcastroh-teach
 
-  **Teaching materials, notebooks, and reference repos for AI, machine learning, and applied data topics.**
+  **Teaching materials, notebooks, and reference repos for AI, Machine Learning, Applied Data Science and Data Engineering topics.**
 </div>
 
 ---
 
 ## About
 
-This organization hosts teaching repositories used for courses, workshops, and self-paced learning in **AI/ML and data science**. Each repo is scoped to a topic or module and generally includes explanatory notebooks, sample datasets, exercises, and reference solutions.
+This organization hosts teaching repositories used for courses, workshops, and self-paced learning in **AI/ML/DS/DE** spaces. Each repo is scoped to a topic or module and generally includes explanatory notebooks, sample datasets, exercises, and reference solutions.
 
 
 ## Getting started
@@ -46,12 +46,17 @@ To keep things predictable across repos in this org:
 - **Licensing** — teaching content is shared under an open license per-repo (see individual repo `LICENSE` files); check before reuse or redistribution.
 
 
-## Contributing / feedback
+Contributing / feedback
 
 These materials are actively maintained. If you spot an error or have a suggestion, open an issue on the relevant repository.
 
----
+Contact
+<div align="center"> <img src="images/contact/profile_photo.png" alt="ehcastroh" width="120" style="border-radius: 50%;" />
 
-<div align="center">
-  <sub>Maintained by ehcastroh · <a href="https://github.com/ehcastroh">GitHub</a> · <a href="https://www.linkedin.com/in/ehcastroh/">LinkedIn</a></sub>
+ehcastroh
+
+<a href="https://github.com/ehcastroh">GitHub</a> · <a href="https://www.linkedin.com/in/ehcastroh/">LinkedIn</a></sub> </div>
 </div>
+
+Questions about a specific repo belong on that repo's issue tracker. For anything about the organization itself — new topics, collaboration, or general feedback — reach out via LinkedIn or GitHub above.
+
