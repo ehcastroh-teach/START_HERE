@@ -1,4 +1,4 @@
-<div align="center">
+div align="center">
   <img src="images/thumbnails/ehcastroh_teach_banner_flower_field.png" alt="ehcastroh-teach logo" width="600" heigth="200"/>
 
   # ehcastroh-teach
@@ -7,11 +7,6 @@
 </div>
 
 ---
-
-## About
-
-This organization hosts teaching repositories used for courses, workshops, and self-paced learning in **AI/ML/DS/DE** spaces. Each repo is scoped to a topic or module and generally includes explanatory notebooks, sample datasets, exercises, and reference solutions.
-
 
 ## Getting started
 
