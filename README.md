@@ -55,7 +55,7 @@ Questions about a specific repo belong on that repo's issue tracker. For anythin
 ---
 
 Contact
-<div align="center"> <img src="images/thumbnails/ehcastroh.jpg" alt="ehcastroh" width="90" style="border-radius: 50%;" />
+<div align="center"> <img src="images/thumbnails/ehcastroh_1.jpg" alt="ehcastroh" width="90" style="border-radius: 50%;" />
 
 ehcastroh
 
