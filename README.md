@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="images/thumbnails/ehcastroh_teach_banner_flowers_sparse.png" alt="ehcastroh-teach landing" width="600" height="200"/>
+  <img src="images/thumbnails/ehcastroh_teach_banner_flowers_sparse.png" alt="ehcastroh-teach landing" width="800"/>
 </div>
 
 # ehcastroh-teach
