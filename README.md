@@ -18,6 +18,7 @@
 
 <table>
 <tr><th align="left">Repository</th><th align="left">Topic</th><th align="left">Level</th><th align="left">Prerequisites</th></tr>
+<tr><td><a href="https://github.com/ehcastroh-teach/Herdr_AI_Dev_Environment">Herdr_AI_Dev_Environment</a></td><td>AI-assisted development environment &amp; workflow</td><td>Intermediate</td><td>Linux CLI</td></tr>
 <tr><td><a href="https://github.com/ehcastroh-teach/Local_Llama">Local_Llama</a></td><td>Local LLM inference &amp; GPU-accelerated serving</td><td>Intermediate</td><td>Linux CLI</td></tr>
 <tr><td><em>tbd</em></td><td>Foundations of machine learning</td><td>Beginner</td><td>None</td></tr>
 <tr><td><em>tbd</em></td><td>Neural networks &amp; deep learning</td><td>Intermediate</td><td>ML foundations</td></tr>
@@ -28,9 +29,25 @@
 
 *This table is updated as repositories are migrated into the organization. Replace each `tbd` with the repo name and link once it's moved.*
 
-## Featured: Local_Llama
+---
 
-**[Local_Llama](https://github.com/ehcastroh-teach/Local_Llama)** — running large language models on your own hardware, declaratively.
+## Environment & tooling track
+
+Two repos cover the practical side of working with AI systems — setting up the machine, the models, and the workflow before any modeling work begins. They're designed to be read together: `Herdr_AI_Dev_Environment` sets up where you work, `Local_Llama` sets up what you run.
+
+### [Herdr_AI_Dev_Environment](https://github.com/ehcastroh-teach/Herdr_AI_Dev_Environment)
+
+**A reproducible development environment for AI-assisted engineering work.**
+
+Covers configuring a working setup around [Herdr](https://github.com/ehcastroh-teach/Herdr_AI_Dev_Environment), Neovim, and agentic coding tools — with configuration kept declarative and version-controlled rather than accumulated by hand.
+
+**Prerequisites:** comfort with a Linux command line and a terminal-based editor.
+
+> **TODO — fill in from the repo:** add a short "What's inside" bullet list here mirroring the Local_Llama section below (3–5 items), and a one-line "why it's worth reading even if you don't use this exact stack" note. I've kept this section deliberately thin since I don't have the repo contents.
+
+### [Local_Llama](https://github.com/ehcastroh-teach/Local_Llama)
+
+**Running large language models on your own hardware, declaratively.**
 
 A start-to-finish guide for setting up GPU-accelerated [llama.cpp](https://github.com/ggml-org/llama.cpp) on NixOS, with every dependency declared in version-controlled config rather than installed ad hoc. Covers the full path from a bare driver check to a working OpenAI-compatible inference endpoint.
 
@@ -46,6 +63,8 @@ A start-to-finish guide for setting up GPU-accelerated [llama.cpp](https://githu
 
 **Prerequisites:** comfort with a Linux command line. An NVIDIA GPU is assumed for the CUDA path, though the modules note ROCm, Vulkan, and Metal alternatives.
 
+---
+
 ## Repository conventions
 
 To keep things predictable across repos in this org:
@@ -59,7 +78,7 @@ To keep things predictable across repos in this org:
 - **Environments** — Python-based repos include a `requirements.txt` or `environment.yml` for reproducibility.
 - **Licensing** — teaching content is shared under an open license per-repo (see individual repo `LICENSE` files); check before reuse or redistribution.
 
-Some repos are setup and infrastructure guides rather than notebook collections. These follow the same README conventions but ship reference config files in place of `notebooks/` and `data/` — `Local_Llama` is the current example.
+Some repos are setup and infrastructure guides rather than notebook collections. These follow the same README conventions but ship reference config files in place of `notebooks/` and `data/` — `Herdr_AI_Dev_Environment` and `Local_Llama` are the current examples.
 
 ## Contributing / feedback
 
