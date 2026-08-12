@@ -65,6 +65,16 @@ A start-to-finish guide for setting up GPU-accelerated [llama.cpp](https://githu
 
 ---
 
+## Resources
+
+Reference documents that support the material across repos in this org.
+
+| Document | Description |
+|:---|:---|
+| [Agents, Bash, and the CLI](Resources/agent-bash-cli-reference.md) | A working reference for building and operating AI agents through a shell - command lookup by task, hardened script patterns, output discipline, exit-code semantics, and the safety model. |
+
+---
+
 ## Repository conventions
 
 To keep things predictable across repos in this org:
