@@ -77,7 +77,7 @@ Reference documents that support the material across repos in this org.
 |:---|:---|
 | [Agents, Bash, and the CLI](Resources/Reference%20%26%20Cheat%20Sheets/agent-bash-cli-reference.md) | A working reference for building and operating AI agents through a shell - command lookup by task, hardened script patterns, output discipline, exit-code semantics, and the safety model. |
 | [Prompt Engineering](Resources/Agent%20Best%20Practices/01-prompt-engineering.md) | Personal reference notes on prompt engineering best practices - scope, structure, and patterns drawn from Anthropic and Google documentation. |
-| [Tools](Resources/Agent%20Best%20Practices/02-tools.md) | Reference notes on designing and using tools with AI agents - when to build a tool, how to write effective tool descriptions, and function-calling patterns. |
+| [Agent Tools](Resources/Agent%20Best%20Practices/02-tools.md) | Reference notes on designing and using tools with AI agents - when to build a tool, how to write effective tool descriptions, and function-calling patterns. |
 
 ---
 
