@@ -20,6 +20,7 @@
 <tr><th align="left">Repository</th><th align="left">Topic</th><th align="left">Level</th><th align="left">Prerequisites</th></tr>
 <tr><td><a href="https://github.com/ehcastroh-teach/Herdr_AI_Dev_Environment">Herdr_AI_Dev_Environment</a></td><td>AI-assisted development environment &amp; workflow</td><td>Intermediate</td><td>Linux CLI</td></tr>
 <tr><td><a href="https://github.com/ehcastroh-teach/Local_Llama">Local_Llama</a></td><td>Local LLM inference &amp; GPU-accelerated serving</td><td>Intermediate</td><td>Linux CLI</td></tr>
+<tr><td><a href="https://github.com/ehcastroh-teach/Forecasting_Using_R">Forecasting_Using_R</a></td><td>Time series forecasting with linear regression - feature selection, VIF, seasonality, and out-of-sample evaluation applied to automotive sales data</td><td>Introductory - Intermediate</td><td>R basics, statistics fundamentals</td></tr>
 <tr><td><a href="https://github.com/ehcastroh-teach/Price_Prediction_Using_R">Price_Prediction_Using_R</a></td><td>Applied ML &amp; statistical prediction - cross-sectional models (Ridge, LASSO, Random Forest, Deep Learning) and time series (AR, ARIMA, SARIMA) applied to Ames housing prices</td><td>Intermediate</td><td>R basics, statistics fundamentals</td></tr>
 <tr><td><a href="https://github.com/ehcastroh-teach/Visual_Types_and_Data_Visualization">Visual_Types_and_Data_Visualization</a></td><td>Applied data analysis &amp; visualization - Matplotlib, Seaborn, Plotnine, Plotly, and Altair grounded in the Grammar of Graphics and Tufte's design principles</td><td>Beginner - Intermediate</td><td>Python basics</td></tr>
 <tr><td><em>tbd</em></td><td>Foundations of machine learning</td><td>Beginner</td><td>None</td></tr>
@@ -71,7 +72,9 @@ Reference documents that support the material across repos in this org.
 
 | Document | Description |
 |:---|:---|
-| [Agents, Bash, and the CLI](Resources/agent-bash-cli-reference.md) | A working reference for building and operating AI agents through a shell - command lookup by task, hardened script patterns, output discipline, exit-code semantics, and the safety model. |
+| [Agents, Bash, and the CLI](Resources/Reference%20%26%20Cheat%20Sheets/agent-bash-cli-reference.md) | A working reference for building and operating AI agents through a shell - command lookup by task, hardened script patterns, output discipline, exit-code semantics, and the safety model. |
+| [Prompt Engineering](Resources/Agent%20Best%20Practices/01-prompt-engineering.md) | Personal reference notes on prompt engineering best practices - scope, structure, and patterns drawn from Anthropic and Google documentation. |
+| [Tools](Resources/Agent%20Best%20Practices/02-tools.md) | Reference notes on designing and using tools with AI agents - when to build a tool, how to write effective tool descriptions, and function-calling patterns. |
 
 ---
 
