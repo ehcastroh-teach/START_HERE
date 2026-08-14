@@ -4,81 +4,255 @@
 
 # ehcastroh-teach
 
-**Teaching materials, notebooks, and reference repos for AI, Machine Learning, Applied Data Science and Data Engineering topics.**
+**Teaching materials, notebooks, and reference repos for AI, Machine Learning, Applied Data Science, and Data Engineering.**
 
 ---
 
 ## Getting started
 
-1. Browse the repository list for the topic you're interested in.
-2. Each repo's own README covers prerequisites, setup, and suggested order for working through the material.
-3. Notebooks are designed to run top-to-bottom; start from a clean environment using the provided dependency file.
-
-## Index of repositories
-
-<table>
-<tr><th align="left">Repository</th><th align="left">Topic</th><th align="left">Level</th><th align="left">Prerequisites</th></tr>
-<tr><td><a href="https://github.com/ehcastroh-teach/Herdr_AI_Dev_Environment">Herdr_AI_Dev_Environment</a></td><td>AI-assisted development environment &amp; workflow</td><td>Intermediate</td><td>Linux CLI</td></tr>
-<tr><td><a href="https://github.com/ehcastroh-teach/Local_Llama">Local_Llama</a></td><td>Local LLM inference &amp; GPU-accelerated serving</td><td>Intermediate</td><td>Linux CLI</td></tr>
-<tr><td><a href="https://github.com/ehcastroh-teach/Forecasting_Using_R">Forecasting_Using_R</a></td><td>Time series forecasting with linear regression - feature selection, VIF, seasonality, and out-of-sample evaluation applied to automotive sales data</td><td>Introductory - Intermediate</td><td>R basics, statistics fundamentals</td></tr>
-<tr><td><a href="https://github.com/ehcastroh-teach/Price_Prediction_Using_R">Price_Prediction_Using_R</a></td><td>Applied ML &amp; statistical prediction - cross-sectional models (Ridge, LASSO, Random Forest, Deep Learning) and time series (AR, ARIMA, SARIMA) applied to Ames housing prices</td><td>Intermediate</td><td>R basics, statistics fundamentals</td></tr>
-<tr><td><a href="https://github.com/ehcastroh-teach/Visual_Types_and_Data_Visualization">Visual_Types_and_Data_Visualization</a></td><td>Applied data analysis &amp; visualization - Matplotlib, Seaborn, Plotnine, Plotly, and Altair grounded in the Grammar of Graphics and Tufte's design principles</td><td>Beginner - Intermediate</td><td>Python basics</td></tr>
-<tr><td><a href="https://github.com/ehcastroh-teach/Visualizations_and_Visual_Storytelling">Visualizations_and_Visual_Storytelling</a></td><td>Data visualization from first principles - encoding theory, Grammar of Graphics, and hands-on notebooks in Matplotlib, Seaborn, Plotly, and Altair, with a Tableau and Dash section for zero-code and hosted dashboards</td><td>Introductory - Intermediate</td><td>Python basics</td></tr>
-<tr><td><a href="https://github.com/ehcastroh-teach/Radial-Plots-for-Matplotlib">Radial-Plots-for-Matplotlib</a></td><td>Radar (spider) chart construction in Python - building polar subplots and a custom polygon-framed RadarAxes projection using Matplotlib</td><td>Introductory - Intermediate</td><td>Python basics, Matplotlib basics</td></tr>
-<tr><td><a href="https://github.com/ehcastroh-teach/Story_Based_E2E_Interview_Prep">Story_Based_E2E_Interview_Prep</a></td><td>End-to-end data science pipeline - EDA, feature engineering, SQLite storage, and multi-model comparison using the Titanic dataset</td><td>Introductory - Intermediate</td><td>Python basics, pandas basics</td></tr>
-<tr><td><a href="https://github.com/ehcastroh-teach/Hypothesis_Based_E2E_Interview_Prep">Hypothesis_Based_E2E_Interview_Prep</a></td><td>Hypothesis-driven ML pipeline - EDA, statistical testing (Mann-Whitney U, Chi-squared), feature engineering, and six-classifier comparison applied to credit risk prediction</td><td>Introductory - Intermediate</td><td>Python basics, pandas basics, statistics fundamentals</td></tr>
-<tr><td><a href="https://github.com/ehcastroh-teach/Flask">Flask</a></td><td>Flask web development - environment setup, routing, Jinja2 templating, SQLAlchemy models, form validation, and cloud deployment</td><td>Introductory - Intermediate</td><td>Python basics, HTML, CSS</td></tr>
-<tr><td><a href="https://github.com/ehcastroh-teach/NumPy_Introduction">NumPy_Introduction</a></td><td>NumPy fundamentals - ndarray creation, slicing, boolean masks, vectorized operations, broadcasting, and a linear regression example using real stock data</td><td>Beginner</td><td>Python basics</td></tr>
-<tr><td><a href="https://github.com/ehcastroh-teach/Pandas_Data_Analysis">Pandas_Data_Analysis</a></td><td>Pandas fundamentals - DataFrame creation, data selection and slicing, CSV and Excel I/O, and exploratory analysis with groupby and describe</td><td>Beginner</td><td>Python basics, NumPy basics</td></tr>
-<tr><td><a href="https://github.com/ehcastroh-teach/TensorFlow_Introduction">TensorFlow_Introduction</a></td><td>TensorFlow V.2 fundamentals - tensors, operations, automatic differentiation with GradientTape, @tf.function graph compilation, and TensorBoard setup</td><td>Introductory - Intermediate</td><td>Python basics, NumPy basics, Pandas basics, linear algebra</td></tr>
-<tr><td><a href="https://github.com/ehcastroh-teach/Ludwig_Regression_and_Classification">Ludwig_Regression_and_Classification</a></td><td>Deep learning regression and classification with TensorFlow v2 and Ludwig - sequential models, EarlyStopping, TensorBoard, tabular regression on Auto MPG, and image classification on Fashion-MNIST</td><td>Introductory - Intermediate</td><td>Python basics, NumPy basics, TensorFlow basics</td></tr>
-<tr><td><a href="https://github.com/ehcastroh-teach/Ludwig_Regularization_and_Crossvalidation">Ludwig_Regularization_and_Crossvalidation</a></td><td>Cross-validation and regularization for NLP using Ludwig - compares RNN, CNN, CNNRNN, and BERT encoders on the Stanford Sentiment Treebank to demonstrate how architecture choice and hyperparameters affect generalization</td><td>Introductory - Intermediate</td><td>Python basics, machine learning basics, Ludwig basics</td></tr>
-<tr><td><em>tbd</em></td><td>Foundations of machine learning</td><td>Beginner</td><td>None</td></tr>
-<tr><td><em>tbd</em></td><td>Neural networks &amp; deep learning</td><td>Intermediate</td><td>ML foundations</td></tr>
-<tr><td><em>tbd</em></td><td>Transformers &amp; attention</td><td>Intermediate</td><td>Neural networks</td></tr>
-</table>
-
-*This table is updated as repositories are added to the organization. Remaining `tbd` entries are placeholders for repos in progress.*
+1. Browse the tracks below for the topic you want.
+2. Each repo's README covers prerequisites, setup, and a suggested order for the material.
+3. Notebooks run top-to-bottom - start from a clean environment using the provided dependency file.
 
 ---
 
-## Environment & tooling track
+## Index
 
-Two repos cover the practical side of working with AI systems - setting up the machine, the models, and the workflow before any modeling work begins. They're designed to be read together: `Herdr_AI_Dev_Environment` sets up where you work, `Local_Llama` sets up what you run.
+<details open>
+<summary><strong>Foundations</strong> &nbsp;·&nbsp; 2 repos</summary>
 
-### [Herdr_AI_Dev_Environment](https://github.com/ehcastroh-teach/Herdr_AI_Dev_Environment)
+<br>
 
-**A reproducible development environment for AI-assisted engineering work.**
+<table>
+<tr>
+  <th align="left">Repository</th>
+  <th align="left">Topic</th>
+  <th align="left">Level</th>
+  <th align="left">Prerequisites</th>
+  <th align="left">Keywords</th>
+</tr>
+<tr>
+  <td><a href="https://github.com/ehcastroh-teach/NumPy_Introduction">NumPy_Introduction</a></td>
+  <td>NumPy fundamentals - ndarray creation, slicing, boolean masks, vectorized operations, broadcasting, and a linear regression example</td>
+  <td>BEG</td>
+  <td>Python basics</td>
+  <td><kbd>numpy</kbd> <kbd>arrays</kbd> <kbd>vectorization</kbd> <kbd>broadcasting</kbd> <kbd>linear-algebra</kbd></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/ehcastroh-teach/Pandas_Data_Analysis">Pandas_Data_Analysis</a></td>
+  <td>Pandas fundamentals - DataFrame creation, data selection and slicing, CSV and Excel I/O, and exploratory analysis with groupby and describe</td>
+  <td>BEG</td>
+  <td>Python basics, NumPy basics</td>
+  <td><kbd>pandas</kbd> <kbd>dataframes</kbd> <kbd>EDA</kbd> <kbd>CSV</kbd> <kbd>groupby</kbd></td>
+</tr>
+</table>
 
-Covers configuring a working setup around [Herdr](https://github.com/ehcastroh-teach/Herdr_AI_Dev_Environment), Neovim, and agentic coding tools - with configuration kept declarative and version-controlled rather than accumulated by hand.
+</details>
 
-**Prerequisites:** comfort with a Linux command line and a terminal-based editor.
+<details open>
+<summary><strong>Data Science & Machine Learning</strong> &nbsp;·&nbsp; 7 repos</summary>
 
-> **TODO - fill in from the repo:** add a short "What's inside" bullet list here mirroring the Local_Llama section below (3-5 items), and a one-line "why it's worth reading even if you don't use this exact stack" note. I've kept this section deliberately thin since I don't have the repo contents.
+<br>
 
-### [Local_Llama](https://github.com/ehcastroh-teach/Local_Llama)
+<table>
+<tr>
+  <th align="left">Repository</th>
+  <th align="left">Topic</th>
+  <th align="left">Level</th>
+  <th align="left">Prerequisites</th>
+  <th align="left">Keywords</th>
+</tr>
+<tr>
+  <td><a href="https://github.com/ehcastroh-teach/Story_Based_E2E_Interview_Prep">Story_Based_E2E_Interview_Prep</a></td>
+  <td>End-to-end data science pipeline - EDA, feature engineering, SQLite storage, and multi-model comparison using the Titanic dataset</td>
+  <td>INT</td>
+  <td>Python basics, pandas basics</td>
+  <td><kbd>EDA</kbd> <kbd>feature-engineering</kbd> <kbd>SQLite</kbd> <kbd>pipelines</kbd> <kbd>classification</kbd></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/ehcastroh-teach/Hypothesis_Based_E2E_Interview_Prep">Hypothesis_Based_E2E_Interview_Prep</a></td>
+  <td>Hypothesis-driven ML pipeline - EDA, statistical testing (Mann-Whitney U, Chi-squared), feature engineering, and six-classifier comparison</td>
+  <td>INT</td>
+  <td>Python basics, pandas basics, statistics fundamentals</td>
+  <td><kbd>hypothesis-testing</kbd> <kbd>EDA</kbd> <kbd>classification</kbd> <kbd>statistics</kbd> <kbd>credit-risk</kbd></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/ehcastroh-teach/TensorFlow_Introduction">TensorFlow_Introduction</a></td>
+  <td>TensorFlow V.2 fundamentals - tensors, operations, automatic differentiation with GradientTape, @tf.function graph compilation, and TensorBoard setup</td>
+  <td>INT</td>
+  <td>Python basics, NumPy basics, Pandas basics, linear algebra</td>
+  <td><kbd>tensorflow</kbd> <kbd>deep-learning</kbd> <kbd>GradientTape</kbd> <kbd>GPU</kbd> <kbd>TensorBoard</kbd></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/ehcastroh-teach/Ludwig_Regression_and_Classification">Ludwig_Regression_and_Classification</a></td>
+  <td>Deep learning regression and classification with Ludwig - sequential models, EarlyStopping, TensorBoard, tabular regression, and image classification</td>
+  <td>INT</td>
+  <td>Python basics, NumPy basics, TensorFlow basics</td>
+  <td><kbd>deep-learning</kbd> <kbd>Ludwig</kbd> <kbd>classification</kbd> <kbd>regression</kbd> <kbd>TensorBoard</kbd></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/ehcastroh-teach/Ludwig_Regularization_and_Crossvalidation">Ludwig_Regularization_and_Crossvalidation</a></td>
+  <td>Cross-validation and regularization for NLP with Ludwig - RNN, CNN, and BERT encoder comparison on the Stanford Sentiment Treebank</td>
+  <td>INT</td>
+  <td>Python basics, machine learning basics, Ludwig basics</td>
+  <td><kbd>Ludwig</kbd> <kbd>NLP</kbd> <kbd>cross-validation</kbd> <kbd>regularization</kbd> <kbd>BERT</kbd></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/ehcastroh-teach/Forecasting_Using_R">Forecasting_Using_R</a></td>
+  <td>Time series forecasting with linear regression - feature selection, VIF, seasonality, and out-of-sample evaluation applied to automotive sales</td>
+  <td>INT</td>
+  <td>R basics, statistics fundamentals</td>
+  <td><kbd>R</kbd> <kbd>time-series</kbd> <kbd>forecasting</kbd> <kbd>regression</kbd> <kbd>seasonality</kbd></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/ehcastroh-teach/Price_Prediction_Using_R">Price_Prediction_Using_R</a></td>
+  <td>Applied ML & statistical prediction - Ridge, LASSO, Random Forest, and ARIMA models applied to Ames housing prices</td>
+  <td>INT</td>
+  <td>R basics, statistics fundamentals</td>
+  <td><kbd>R</kbd> <kbd>LASSO</kbd> <kbd>Random-Forest</kbd> <kbd>ARIMA</kbd> <kbd>regression</kbd></td>
+</tr>
+</table>
 
-**Running large language models on your own hardware, declaratively.**
+</details>
 
-A start-to-finish guide for setting up GPU-accelerated [llama.cpp](https://github.com/ggml-org/llama.cpp) on NixOS, with every dependency declared in version-controlled config rather than installed ad hoc. Covers the full path from a bare driver check to a working OpenAI-compatible inference endpoint.
+<details open>
+<summary><strong>Visualization</strong> &nbsp;·&nbsp; 3 repos</summary>
 
-**What's inside**
+<br>
 
-- Step-by-step tutorial with an expected-output check after every step, so you can confirm progress instead of guessing
-- Drop-in Nix modules for llama.cpp (CUDA), `huggingface-cli`, and an optional systemd service
-- Guidance on choosing quantization levels against your available VRAM
-- A troubleshooting table mapping real error messages to fixes
-- The reasoning behind llama.cpp vs. Ollama vs. vLLM for single-GPU use
+<table>
+<tr>
+  <th align="left">Repository</th>
+  <th align="left">Topic</th>
+  <th align="left">Level</th>
+  <th align="left">Prerequisites</th>
+  <th align="left">Keywords</th>
+</tr>
+<tr>
+  <td><a href="https://github.com/ehcastroh-teach/Visual_Types_and_Data_Visualization">Visual_Types_and_Data_Visualization</a></td>
+  <td>Data analysis & visualization - Matplotlib, Seaborn, Plotnine, Plotly, and Altair grounded in Grammar of Graphics and Tufte's design principles</td>
+  <td>INT</td>
+  <td>Python basics</td>
+  <td><kbd>matplotlib</kbd> <kbd>seaborn</kbd> <kbd>plotly</kbd> <kbd>grammar-of-graphics</kbd> <kbd>visualization</kbd></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/ehcastroh-teach/Visualizations_and_Visual_Storytelling">Visualizations_and_Visual_Storytelling</a></td>
+  <td>Data visualization from first principles - encoding theory, Grammar of Graphics, Matplotlib, Seaborn, Plotly, Altair, Tableau, and Dash</td>
+  <td>INT</td>
+  <td>Python basics</td>
+  <td><kbd>visualization</kbd> <kbd>storytelling</kbd> <kbd>grammar-of-graphics</kbd> <kbd>Tableau</kbd> <kbd>Dash</kbd></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/ehcastroh-teach/Radial-Plots-for-Matplotlib">Radial-Plots-for-Matplotlib</a></td>
+  <td>Radar (spider) chart construction in Python - building polar subplots and a custom polygon-framed RadarAxes projection using Matplotlib</td>
+  <td>INT</td>
+  <td>Python basics, Matplotlib basics</td>
+  <td><kbd>matplotlib</kbd> <kbd>radar-chart</kbd> <kbd>polar-plots</kbd> <kbd>custom-projection</kbd> <kbd>visualization</kbd></td>
+</tr>
+</table>
 
-**Why it's worth reading even if you don't use NixOS:** the model-selection, quantization, VRAM-budgeting, and GPU-verification material transfers to any local inference setup. The declarative-config discipline is the part that's NixOS-specific.
+</details>
 
-**Prerequisites:** comfort with a Linux command line. An NVIDIA GPU is assumed for the CUDA path, though the modules note ROCm, Vulkan, and Metal alternatives.
+<details open>
+<summary><strong>AI Tooling & Environment</strong> &nbsp;·&nbsp; 2 repos</summary>
+
+<br>
+
+<table>
+<tr>
+  <th align="left">Repository</th>
+  <th align="left">Topic</th>
+  <th align="left">Level</th>
+  <th align="left">Prerequisites</th>
+  <th align="left">Keywords</th>
+</tr>
+<tr>
+  <td><a href="https://github.com/ehcastroh-teach/Herdr_AI_Dev_Environment">Herdr_AI_Dev_Environment</a></td>
+  <td>AI-assisted development environment & workflow - Neovim, agentic coding tools, and declarative version-controlled configuration</td>
+  <td>INT</td>
+  <td>Linux CLI</td>
+  <td><kbd>AI-dev</kbd> <kbd>Neovim</kbd> <kbd>agentic-coding</kbd> <kbd>environment</kbd> <kbd>NixOS</kbd></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/ehcastroh-teach/Local_Llama">Local_Llama</a></td>
+  <td>Local LLM inference & GPU-accelerated serving - llama.cpp setup, CUDA configuration, quantization, and an OpenAI-compatible endpoint</td>
+  <td>INT</td>
+  <td>Linux CLI</td>
+  <td><kbd>LLM</kbd> <kbd>llama.cpp</kbd> <kbd>local-inference</kbd> <kbd>GPU</kbd> <kbd>quantization</kbd></td>
+</tr>
+</table>
+
+</details>
+
+<details open>
+<summary><strong>Web Development</strong> &nbsp;·&nbsp; 1 repo</summary>
+
+<br>
+
+<table>
+<tr>
+  <th align="left">Repository</th>
+  <th align="left">Topic</th>
+  <th align="left">Level</th>
+  <th align="left">Prerequisites</th>
+  <th align="left">Keywords</th>
+</tr>
+<tr>
+  <td><a href="https://github.com/ehcastroh-teach/Flask">Flask</a></td>
+  <td>Flask web development - environment setup, routing, Jinja2 templating, SQLAlchemy models, form validation, and cloud deployment</td>
+  <td>INT</td>
+  <td>Python basics, HTML, CSS</td>
+  <td><kbd>Flask</kbd> <kbd>web-dev</kbd> <kbd>routing</kbd> <kbd>SQLAlchemy</kbd> <kbd>Jinja2</kbd></td>
+</tr>
+</table>
+
+</details>
+
+<details>
+<summary><strong>Coming Soon</strong> &nbsp;·&nbsp; 3 repos</summary>
+
+<br>
+
+<table>
+<tr>
+  <th align="left">Repository</th>
+  <th align="left">Topic</th>
+  <th align="left">Level</th>
+  <th align="left">Prerequisites</th>
+  <th align="left">Keywords</th>
+</tr>
+<tr>
+  <td><em>tbd</em></td>
+  <td>Foundations of machine learning</td>
+  <td>BEG</td>
+  <td>None</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><em>tbd</em></td>
+  <td>Neural networks & deep learning</td>
+  <td>INT</td>
+  <td>ML foundations</td>
+  <td>-</td>
+</tr>
+<tr>
+  <td><em>tbd</em></td>
+  <td>Transformers & attention</td>
+  <td>INT</td>
+  <td>Neural networks</td>
+  <td>-</td>
+</tr>
+</table>
+
+</details>
+
+*This index is updated as repositories are added to the organization.*
 
 ---
 
 ## Resources
 
-Reference documents that support the material across repos in this org.
+Reference documents that support the material across repos.
 
 | Document | Description |
 |:---|:---|
@@ -104,6 +278,8 @@ To keep things predictable across repos in this org:
 - **Licensing** - teaching content is shared under an open license per-repo (see individual repo `LICENSE` files); check before reuse or redistribution.
 
 Some repos are setup and infrastructure guides rather than notebook collections. These follow the same README conventions but ship reference config files in place of `notebooks/` and `data/` - `Herdr_AI_Dev_Environment` and `Local_Llama` are the current examples.
+
+---
 
 ## Contributing / feedback
 
