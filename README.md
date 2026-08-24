@@ -50,7 +50,7 @@
 </details>
 
 <details open>
-<summary><strong>Data Science & Machine Learning</strong> &nbsp;·&nbsp; 8 repos</summary>
+<summary><strong>Data Science & Machine Learning</strong> &nbsp;·&nbsp; 9 repos</summary>
 
 <br>
 
@@ -61,6 +61,13 @@
   <th align="left">Level</th>
   <th align="left">Prerequisites</th>
   <th align="left">Keywords</th>
+</tr>
+<tr>
+  <td><a href="https://github.com/ehcastroh-teach/Logistic_Regression">Logistic_Regression</a></td>
+  <td>Multi-class logistic regression with scikit-learn - One-vs-Rest and Softmax strategies, Min-Max and Standard feature scaling, confusion matrices, precision, and recall applied to building energy load and handwritten digit classification</td>
+  <td>BEG</td>
+  <td>Python basics, NumPy basics, pandas basics</td>
+  <td><kbd>logistic-regression</kbd> <kbd>classification</kbd> <kbd>scikit-learn</kbd> <kbd>confusion-matrix</kbd> <kbd>feature-scaling</kbd></td>
 </tr>
 <tr>
   <td><a href="https://github.com/ehcastroh-teach/Linear_Regression">Linear_Regression</a></td>
