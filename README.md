@@ -50,7 +50,7 @@
 </details>
 
 <details open>
-<summary><strong>Data Science & Machine Learning</strong> &nbsp;·&nbsp; 7 repos</summary>
+<summary><strong>Data Science & Machine Learning</strong> &nbsp;·&nbsp; 8 repos</summary>
 
 <br>
 
@@ -61,6 +61,13 @@
   <th align="left">Level</th>
   <th align="left">Prerequisites</th>
   <th align="left">Keywords</th>
+</tr>
+<tr>
+  <td><a href="https://github.com/ehcastroh-teach/Linear_Regression">Linear_Regression</a></td>
+  <td>Linear regression from first principles - computing expected value, covariance, and variance by hand, then deriving single-variable and multi-variable predictors using the normal equation on a real estate dataset</td>
+  <td>BEG</td>
+  <td>Python basics, NumPy basics</td>
+  <td><kbd>linear-regression</kbd> <kbd>numpy</kbd> <kbd>statistics</kbd> <kbd>covariance</kbd> <kbd>normal-equation</kbd></td>
 </tr>
 <tr>
   <td><a href="https://github.com/ehcastroh-teach/Story_Based_E2E_Interview_Prep">Story_Based_E2E_Interview_Prep</a></td>
@@ -261,6 +268,16 @@ Reference documents that support the material across repos.
 | [Agent Tools](Resources/Agent%20Best%20Practices/02-tools.md) | Reference notes on designing and using tools with AI agents - when to build a tool, how to write effective tool descriptions, and function-calling patterns. |
 | [Agent Skills](Resources/Agent%20Best%20Practices/03-skills.md) | Reference notes on agent skills - what a skill is, how to author and package them, security considerations, and the open agentskills standard. |
 | [Context Engineering](Resources/Agent%20Best%20Practices/04-context-engineering.md) | Reference notes on context engineering for AI agents - managing what goes into the context window, effective structuring, and the distinction from prompt engineering. |
+| [RAG](Resources/Agent%20Best%20Practices/05-rag.md) | Reference notes on retrieval-augmented generation - contextual retrieval, chunking strategies, and when RAG fits versus other context-injection approaches. |
+| [MCP (Model Context Protocol)](Resources/Agent%20Best%20Practices/06-mcp.md) | Reference notes on the Model Context Protocol - server features, tool and resource exposure, authorization, and practical integration patterns. |
+| [Harness Engineering](Resources/Agent%20Best%20Practices/07-harness-engineering.md) | Reference notes on agent harness design - the definition of harness, three architectural patterns, and lessons from long-running agent deployments. |
+| [Running LLMs Locally](Resources/Agent%20Best%20Practices/08-running-llms-locally.md) | Reference notes on local LLM inference - llama.cpp with CUDA on NixOS, quantization, function-calling, and serving options including vLLM and Ray Serve. |
+| [Agent Sandboxing](Resources/Agent%20Best%20Practices/09-agent-sandboxing.md) | Reference notes on containing agent execution - sandboxing layers, isolation primitives (namespaces, microVMs), and the distinction from filesystem permissions. |
+| [Loop Engineering](Resources/Agent%20Best%20Practices/10-loop-engineering.md) | Reference notes on agentic loop design - ReAct and Reflexion patterns, loop termination, and how the loop sits inside a larger harness. |
+| [Hooks](Resources/Agent%20Best%20Practices/11-hooks.md) | Reference notes on Claude Code hooks - what a hook is, event types, and how hooks integrate into the agent execution cycle. |
+| [Sandboxing](Resources/Agent%20Best%20Practices/12-sandboxing.md) | Reference notes on OS-level sandboxing primitives - Linux namespaces, Nix sandbox configuration, and comparison of gVisor and Firecracker. |
+| [Evals](Resources/Agent%20Best%20Practices/13-evals.md) | Reference notes on AI evaluation - the distinction between tests and evals, layered evaluation strategies, and RAGAS metrics for RAG pipelines. |
+| [Agent Orchestration](Resources/Agent%20Best%20Practices/14-agent-orchestration.md) | Reference notes on multi-agent orchestration - task decomposition, parallel execution, subagent coordination, and lessons from Anthropic's multi-agent research system. |
 
 ---
 
