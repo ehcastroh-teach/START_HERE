@@ -137,7 +137,7 @@
 </details>
 
 <details open>
-<summary><strong>Visualization</strong> &nbsp;·&nbsp; 3 repos</summary>
+<summary><strong>Visualization</strong> &nbsp;·&nbsp; 4 repos</summary>
 
 <br>
 
@@ -169,6 +169,13 @@
   <td>INT</td>
   <td>Python basics, Matplotlib basics</td>
   <td><kbd>matplotlib</kbd> <kbd>radar-chart</kbd> <kbd>polar-plots</kbd> <kbd>custom-projection</kbd> <kbd>visualization</kbd></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/ehcastroh-teach/Radial_Plots_for_Matplotlib">Radial_Plots_for_Matplotlib</a></td>
+  <td>Build radar (spider) charts in Matplotlib - from a basic polar subplot to a custom polygon-framed RadarAxes projection.</td>
+  <td>INT</td>
+  <td>Matplotlib basics, Pandas DataFrames</td>
+  <td><kbd>radar chart</kbd> <kbd>matplotlib</kbd> <kbd>polar axes</kbd> <kbd>data visualization</kbd> <kbd>spider chart</kbd></td>
 </tr>
 </table>
 
