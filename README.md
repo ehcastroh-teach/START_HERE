@@ -50,7 +50,7 @@
 </details>
 
 <details open>
-<summary><strong>Data Science & Machine Learning</strong> &nbsp;·&nbsp; 9 repos</summary>
+<summary><strong>Data Science & Machine Learning</strong> &nbsp;·&nbsp; 10 repos</summary>
 
 <br>
 
@@ -131,6 +131,13 @@
   <td>INT</td>
   <td>Python basics, pandas basics</td>
   <td><kbd>dataset-audit</kbd> <kbd>fairness</kbd> <kbd>BRISQUE</kbd> <kbd>pandas</kbd> <kbd>image-quality</kbd></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/ehcastroh-teach/Ensemble_Models">Ensemble_Models</a></td>
+  <td>Ensemble learning and AutoML on the Titanic dataset using LightAutoML and FlaML</td>
+  <td>INT</td>
+  <td>pandas basics, binary classification concepts</td>
+  <td><kbd>ensemble learning</kbd> <kbd>AutoML</kbd> <kbd>feature engineering</kbd> <kbd>LightAutoML</kbd> <kbd>FlaML</kbd></td>
 </tr>
 </table>
 
