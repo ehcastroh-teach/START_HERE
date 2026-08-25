@@ -125,6 +125,13 @@
   <td>R basics, statistics fundamentals</td>
   <td><kbd>R</kbd> <kbd>LASSO</kbd> <kbd>Random-Forest</kbd> <kbd>ARIMA</kbd> <kbd>regression</kbd></td>
 </tr>
+<tr>
+  <td><a href="https://github.com/ehcastroh-teach/Data_Checks">Data_Checks</a></td>
+  <td>Dataset inspection for ML fairness - measuring demographic diversity, counting subgroup representation across gender, race, and age, and scoring image quality using BRISQUE on two facial image datasets</td>
+  <td>INT</td>
+  <td>Python basics, pandas basics</td>
+  <td><kbd>dataset-audit</kbd> <kbd>fairness</kbd> <kbd>BRISQUE</kbd> <kbd>pandas</kbd> <kbd>image-quality</kbd></td>
+</tr>
 </table>
 
 </details>
