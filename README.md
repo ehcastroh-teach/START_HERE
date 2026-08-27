@@ -50,7 +50,7 @@
 </details>
 
 <details open>
-<summary><strong>Data Science & Machine Learning</strong> &nbsp;·&nbsp; 9 repos</summary>
+<summary><strong>Data Science & Machine Learning</strong> &nbsp;·&nbsp; 10 repos</summary>
 
 <br>
 
@@ -124,6 +124,13 @@
   <td>INT</td>
   <td>pandas basics, binary classification concepts</td>
   <td><kbd>ensemble learning</kbd> <kbd>AutoML</kbd> <kbd>feature engineering</kbd> <kbd>LightAutoML</kbd> <kbd>FlaML</kbd></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/ehcastroh-teach/ML_Practices">ML_Practices</a></td>
+  <td>Build and tune image classifiers, combine model predictions with ensemble selection, and apply Bayesian optimization.</td>
+  <td>INT</td>
+  <td>supervised learning, scikit-learn</td>
+  <td><kbd>CNN</kbd> <kbd>ensemble methods</kbd> <kbd>hyperparameter optimization</kbd> <kbd>Bayesian optimization</kbd> <kbd>random search</kbd></td>
 </tr>
 </table>
 
