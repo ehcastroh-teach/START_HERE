@@ -50,7 +50,7 @@
 </details>
 
 <details open>
-<summary><strong>Data Science & Machine Learning</strong> &nbsp;·&nbsp; 10 repos</summary>
+<summary><strong>Data Science & Machine Learning</strong> &nbsp;·&nbsp; 9 repos</summary>
 
 <br>
 
@@ -75,20 +75,6 @@
   <td>BEG</td>
   <td>Python basics, NumPy basics</td>
   <td><kbd>linear-regression</kbd> <kbd>numpy</kbd> <kbd>statistics</kbd> <kbd>covariance</kbd> <kbd>normal-equation</kbd></td>
-</tr>
-<tr>
-  <td><a href="https://github.com/ehcastroh-teach/Story_Based_E2E_Interview_Prep">Story_Based_E2E_Interview_Prep</a></td>
-  <td>End-to-end data science pipeline - EDA, feature engineering, SQLite storage, and multi-model comparison using the Titanic dataset</td>
-  <td>INT</td>
-  <td>Python basics, pandas basics</td>
-  <td><kbd>EDA</kbd> <kbd>feature-engineering</kbd> <kbd>SQLite</kbd> <kbd>pipelines</kbd> <kbd>classification</kbd></td>
-</tr>
-<tr>
-  <td><a href="https://github.com/ehcastroh-teach/Hypothesis_Based_E2E_Interview_Prep">Hypothesis_Based_E2E_Interview_Prep</a></td>
-  <td>Hypothesis-driven ML pipeline - EDA, statistical testing (Mann-Whitney U, Chi-squared), feature engineering, and six-classifier comparison</td>
-  <td>INT</td>
-  <td>Python basics, pandas basics, statistics fundamentals</td>
-  <td><kbd>hypothesis-testing</kbd> <kbd>EDA</kbd> <kbd>classification</kbd> <kbd>statistics</kbd> <kbd>credit-risk</kbd></td>
 </tr>
 <tr>
   <td><a href="https://github.com/ehcastroh-teach/TensorFlow_Introduction">TensorFlow_Introduction</a></td>
@@ -138,6 +124,37 @@
   <td>INT</td>
   <td>pandas basics, binary classification concepts</td>
   <td><kbd>ensemble learning</kbd> <kbd>AutoML</kbd> <kbd>feature engineering</kbd> <kbd>LightAutoML</kbd> <kbd>FlaML</kbd></td>
+</tr>
+</table>
+
+</details>
+
+<details open>
+<summary><strong>Interview Prep (End-to-End Examples)</strong> &nbsp;·&nbsp; 2 repos</summary>
+
+<br>
+
+<table>
+<tr>
+  <th align="left">Repository</th>
+  <th align="left">Topic</th>
+  <th align="left">Level</th>
+  <th align="left">Prerequisites</th>
+  <th align="left">Keywords</th>
+</tr>
+<tr>
+  <td><a href="https://github.com/ehcastroh-teach/Story_Based_E2E_Interview_Prep">Story_Based_E2E_Interview_Prep</a></td>
+  <td>End-to-end data science pipeline - EDA, feature engineering, SQLite storage, and multi-model comparison using the Titanic dataset</td>
+  <td>INT</td>
+  <td>Python basics, pandas basics</td>
+  <td><kbd>EDA</kbd> <kbd>feature-engineering</kbd> <kbd>SQLite</kbd> <kbd>pipelines</kbd> <kbd>classification</kbd></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/ehcastroh-teach/Hypothesis_Based_E2E_Interview_Prep">Hypothesis_Based_E2E_Interview_Prep</a></td>
+  <td>Hypothesis-driven ML pipeline - EDA, statistical testing (Mann-Whitney U, Chi-squared), feature engineering, and six-classifier comparison</td>
+  <td>INT</td>
+  <td>Python basics, pandas basics, statistics fundamentals</td>
+  <td><kbd>hypothesis-testing</kbd> <kbd>EDA</kbd> <kbd>classification</kbd> <kbd>statistics</kbd> <kbd>credit-risk</kbd></td>
 </tr>
 </table>
 
