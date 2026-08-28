@@ -168,7 +168,7 @@
 </details>
 
 <details open>
-<summary><strong>Visualization</strong> &nbsp;·&nbsp; 4 repos</summary>
+<summary><strong>Data Visualization</strong> &nbsp;·&nbsp; 4 repos</summary>
 
 <br>
 
