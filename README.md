@@ -88,7 +88,7 @@
 </details>
 
 <details open>
-<summary><strong>Machine Learning & Deep Learning</strong> &nbsp;·&nbsp; 8 repos</summary>
+<summary><strong>Machine Learning & Deep Learning</strong> &nbsp;·&nbsp; 9 repos</summary>
 
 <br>
 
@@ -155,6 +155,13 @@
   <td>INT</td>
   <td>Python basics, pandas, introductory supervised learning</td>
   <td><kbd>precision</kbd> <kbd>recall</kbd> <kbd>threshold</kbd> <kbd>scikit-learn</kbd> <kbd>SVM</kbd></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/ehcastroh-teach/Prediction">Prediction</a></td>
+  <td>Build regression models to predict housing prices using property features and economic indicators</td>
+  <td>INT</td>
+  <td>Python basics, pandas, numpy fundamentals</td>
+  <td><kbd>regression</kbd> <kbd>machine learning</kbd> <kbd>time series</kbd> <kbd>ARIMA</kbd> <kbd>Random Forest</kbd></td>
 </tr>
 </table>
 
