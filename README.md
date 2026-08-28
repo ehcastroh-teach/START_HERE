@@ -275,7 +275,7 @@
 </details>
 
 <details open>
-<summary><strong>Applied AI & Generative AI</strong> &nbsp;·&nbsp; 0 repos</summary>
+<summary><strong>Applied AI & Generative AI</strong> &nbsp;·&nbsp; 2 repos</summary>
 
 <br>
 
@@ -288,7 +288,18 @@
   <th align="left">Keywords</th>
 </tr>
 <tr>
-  <td colspan="5" align="center"><em>Coming soon — repositories on LLMs, prompt engineering, RAG, agentic systems, and building with generative AI APIs</em></td>
+  <td><a href="https://github.com/ehcastroh-teach/MCP_Arxiv_Chatbot">MCP_Arxiv_Chatbot</a></td>
+  <td>Build tool-using LLM applications with the Model Context Protocol - arXiv paper search chatbot with schemas, dispatcher, and async, streaming, and web API variants</td>
+  <td>BEG</td>
+  <td>Python basics, JSON basics, Anthropic API access</td>
+  <td><kbd>MCP</kbd> <kbd>tool-calling</kbd> <kbd>LLM</kbd> <kbd>chatbot</kbd> <kbd>anthropic</kbd></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/ehcastroh-teach/MCP_ArXiv_Chatbot">MCP_ArXiv_Chatbot</a></td>
+  <td>Build LLM tool-calling applications with the Model Context Protocol; implement an arXiv paper-search chatbot end-to-end.</td>
+  <td>BEG</td>
+  <td>Python, JSON basics</td>
+  <td><kbd>mcp</kbd> <kbd>tool-calling</kbd> <kbd>llm</kbd> <kbd>anthropic-api</kbd> <kbd>arxiv</kbd></td>
 </tr>
 </table>
 
