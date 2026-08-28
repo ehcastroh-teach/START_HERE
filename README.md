@@ -50,7 +50,45 @@
 </details>
 
 <details open>
-<summary><strong>Data Science & Machine Learning</strong> &nbsp;·&nbsp; 10 repos</summary>
+<summary><strong>Data Science & Analysis</strong> &nbsp;·&nbsp; 3 repos</summary>
+
+<br>
+
+<table>
+<tr>
+  <th align="left">Repository</th>
+  <th align="left">Topic</th>
+  <th align="left">Level</th>
+  <th align="left">Prerequisites</th>
+  <th align="left">Keywords</th>
+</tr>
+<tr>
+  <td><a href="https://github.com/ehcastroh-teach/Linear_Regression">Linear_Regression</a></td>
+  <td>Linear regression from first principles - computing expected value, covariance, and variance by hand, then deriving single-variable and multi-variable predictors using the normal equation on a real estate dataset</td>
+  <td>BEG</td>
+  <td>Python basics, NumPy basics</td>
+  <td><kbd>linear-regression</kbd> <kbd>numpy</kbd> <kbd>statistics</kbd> <kbd>covariance</kbd> <kbd>normal-equation</kbd></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/ehcastroh-teach/Forecasting_Using_R">Forecasting_Using_R</a></td>
+  <td>Time series forecasting with linear regression - feature selection, VIF, seasonality, and out-of-sample evaluation applied to automotive sales</td>
+  <td>INT</td>
+  <td>R basics, statistics fundamentals</td>
+  <td><kbd>R</kbd> <kbd>time-series</kbd> <kbd>forecasting</kbd> <kbd>regression</kbd> <kbd>seasonality</kbd></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/ehcastroh-teach/Data_Checks">Data_Checks</a></td>
+  <td>Dataset inspection for ML fairness - measuring demographic diversity, counting subgroup representation across gender, race, and age, and scoring image quality using BRISQUE on two facial image datasets</td>
+  <td>INT</td>
+  <td>Python basics, pandas basics</td>
+  <td><kbd>dataset-audit</kbd> <kbd>fairness</kbd> <kbd>BRISQUE</kbd> <kbd>pandas</kbd> <kbd>image-quality</kbd></td>
+</tr>
+</table>
+
+</details>
+
+<details open>
+<summary><strong>Machine Learning & Deep Learning</strong> &nbsp;·&nbsp; 8 repos</summary>
 
 <br>
 
@@ -68,13 +106,6 @@
   <td>BEG</td>
   <td>Python basics, NumPy basics, pandas basics</td>
   <td><kbd>logistic-regression</kbd> <kbd>classification</kbd> <kbd>scikit-learn</kbd> <kbd>confusion-matrix</kbd> <kbd>feature-scaling</kbd></td>
-</tr>
-<tr>
-  <td><a href="https://github.com/ehcastroh-teach/Linear_Regression">Linear_Regression</a></td>
-  <td>Linear regression from first principles - computing expected value, covariance, and variance by hand, then deriving single-variable and multi-variable predictors using the normal equation on a real estate dataset</td>
-  <td>BEG</td>
-  <td>Python basics, NumPy basics</td>
-  <td><kbd>linear-regression</kbd> <kbd>numpy</kbd> <kbd>statistics</kbd> <kbd>covariance</kbd> <kbd>normal-equation</kbd></td>
 </tr>
 <tr>
   <td><a href="https://github.com/ehcastroh-teach/TensorFlow_Introduction">TensorFlow_Introduction</a></td>
@@ -98,25 +129,11 @@
   <td><kbd>Ludwig</kbd> <kbd>NLP</kbd> <kbd>cross-validation</kbd> <kbd>regularization</kbd> <kbd>BERT</kbd></td>
 </tr>
 <tr>
-  <td><a href="https://github.com/ehcastroh-teach/Forecasting_Using_R">Forecasting_Using_R</a></td>
-  <td>Time series forecasting with linear regression - feature selection, VIF, seasonality, and out-of-sample evaluation applied to automotive sales</td>
-  <td>INT</td>
-  <td>R basics, statistics fundamentals</td>
-  <td><kbd>R</kbd> <kbd>time-series</kbd> <kbd>forecasting</kbd> <kbd>regression</kbd> <kbd>seasonality</kbd></td>
-</tr>
-<tr>
   <td><a href="https://github.com/ehcastroh-teach/Price_Prediction_Using_R">Price_Prediction_Using_R</a></td>
   <td>Applied ML & statistical prediction - Ridge, LASSO, Random Forest, and ARIMA models applied to Ames housing prices</td>
   <td>INT</td>
   <td>R basics, statistics fundamentals</td>
   <td><kbd>R</kbd> <kbd>LASSO</kbd> <kbd>Random-Forest</kbd> <kbd>ARIMA</kbd> <kbd>regression</kbd></td>
-</tr>
-<tr>
-  <td><a href="https://github.com/ehcastroh-teach/Data_Checks">Data_Checks</a></td>
-  <td>Dataset inspection for ML fairness - measuring demographic diversity, counting subgroup representation across gender, race, and age, and scoring image quality using BRISQUE on two facial image datasets</td>
-  <td>INT</td>
-  <td>Python basics, pandas basics</td>
-  <td><kbd>dataset-audit</kbd> <kbd>fairness</kbd> <kbd>BRISQUE</kbd> <kbd>pandas</kbd> <kbd>image-quality</kbd></td>
 </tr>
 <tr>
   <td><a href="https://github.com/ehcastroh-teach/Ensemble_Models">Ensemble_Models</a></td>
@@ -131,6 +148,13 @@
   <td>INT</td>
   <td>supervised learning, scikit-learn</td>
   <td><kbd>CNN</kbd> <kbd>ensemble methods</kbd> <kbd>hyperparameter optimization</kbd> <kbd>Bayesian optimization</kbd> <kbd>random search</kbd></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/ehcastroh-teach/Precision_Recall">Precision_Recall</a></td>
+  <td>Precision, recall, and threshold selection for binary classifiers - two case studies with logistic regression and SVM</td>
+  <td>INT</td>
+  <td>Python basics, pandas, introductory supervised learning</td>
+  <td><kbd>precision</kbd> <kbd>recall</kbd> <kbd>threshold</kbd> <kbd>scikit-learn</kbd> <kbd>SVM</kbd></td>
 </tr>
 </table>
 
@@ -238,6 +262,26 @@
   <td>INT</td>
   <td>Linux CLI</td>
   <td><kbd>LLM</kbd> <kbd>llama.cpp</kbd> <kbd>local-inference</kbd> <kbd>GPU</kbd> <kbd>quantization</kbd></td>
+</tr>
+</table>
+
+</details>
+
+<details open>
+<summary><strong>Applied AI & Generative AI</strong> &nbsp;·&nbsp; 0 repos</summary>
+
+<br>
+
+<table>
+<tr>
+  <th align="left">Repository</th>
+  <th align="left">Topic</th>
+  <th align="left">Level</th>
+  <th align="left">Prerequisites</th>
+  <th align="left">Keywords</th>
+</tr>
+<tr>
+  <td colspan="5" align="center"><em>Coming soon — repositories on LLMs, prompt engineering, RAG, agentic systems, and building with generative AI APIs</em></td>
 </tr>
 </table>
 
