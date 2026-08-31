@@ -29,7 +29,7 @@ Three curated sequences for the most common starting points. Each repo builds on
 `NumPy_Introduction` → `Pandas_Data_Analysis` → `Linear_Regression` → `Logistic_Regression` → `Precision_Recall` → `Ensemble_Models`
 
 **Building LLM applications**
-`MCP_ArXiv_Chatbot` → `Local_Llama` → Resources: [Prompt Engineering](Resources/Agent%20Best%20Practices/01-prompt-engineering.md), [Tools](Resources/Agent%20Best%20Practices/02-tools.md), [MCP](Resources/Agent%20Best%20Practices/06-mcp.md)
+`MCP_ArXiv_Chatbot` → `EDD_Agent_Evals` → `Local_Llama` → Resources: [Prompt Engineering](Resources/Agent%20Best%20Practices/01-prompt-engineering.md), [Tools](Resources/Agent%20Best%20Practices/02-tools.md), [MCP](Resources/Agent%20Best%20Practices/06-mcp.md)
 
 **Learning R for data analysis**
 `Forecasting_Using_R` → `Price_Prediction_Using_R`
@@ -281,7 +281,7 @@ Three curated sequences for the most common starting points. Each repo builds on
 </details>
 
 <details>
-<summary><strong>Applied AI & Generative AI</strong> &nbsp;·&nbsp; 1 repo</summary>
+<summary><strong>Applied AI & Generative AI</strong> &nbsp;·&nbsp; 2 repos</summary>
 
 <br>
 
@@ -299,6 +299,13 @@ Three curated sequences for the most common starting points. Each repo builds on
   <td>BEG</td>
   <td>Python basics, JSON basics</td>
   <td><kbd>mcp</kbd> <kbd>tool-calling</kbd> <kbd>llm</kbd> <kbd>anthropic-api</kbd> <kbd>arxiv</kbd></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/ehcastroh-teach/EDD_Agent_Evals">EDD_Agent_Evals</a></td>
+  <td>EDD for LLM agents - trace with Arize Phoenix, score with LLM-as-judge, and make targeted prompt improvements driven by eval results</td>
+  <td>INT</td>
+  <td>Python basics, OpenAI API basics</td>
+  <td><kbd>agent-evals</kbd> <kbd>llm</kbd> <kbd>openai</kbd> <kbd>arize-phoenix</kbd> <kbd>edd</kbd></td>
 </tr>
 </table>
 
@@ -406,4 +413,4 @@ These materials are actively maintained. Bug reports and suggestions belong on t
 
 <br>
 
-<sub>Last updated: 2026-08-28</sub>
+<sub>Last updated: 2026-08-31</sub>
