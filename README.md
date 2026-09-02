@@ -118,7 +118,7 @@ Three curated sequences for the most common starting points. Each repo builds on
 </details>
 
 <details open>
-<summary><strong>Machine Learning & Deep Learning</strong> &nbsp;·&nbsp; 12 repos</summary>
+<summary><strong>Machine Learning & Deep Learning</strong> &nbsp;·&nbsp; 13 repos</summary>
 
 <br>
 
@@ -213,6 +213,13 @@ Three curated sequences for the most common starting points. Each repo builds on
   <td>INT</td>
   <td>Python, NumPy, Linear Algebra</td>
   <td><kbd>pytorch</kbd> <kbd>autograd</kbd> <kbd>nn-module</kbd> <kbd>tensors</kbd> <kbd>deep-learning</kbd></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/ehcastroh-teach/Synthetic_Data_Generation">Synthetic_Data_Generation</a></td>
+  <td>Generate synthetic tabular data from seed CSVs and sklearn generators; apply classification and regression to generated datasets.</td>
+  <td>INT</td>
+  <td>Python, pandas, scikit-learn</td>
+  <td><kbd>synthetic data</kbd> <kbd>classification</kbd> <kbd>regression</kbd> <kbd>clustering</kbd> <kbd>pandas</kbd></td>
 </tr>
 </table>
 
