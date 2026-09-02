@@ -73,7 +73,7 @@ Three curated sequences for the most common starting points. Each repo builds on
 </details>
 
 <details open>
-<summary><strong>Data Science & Analysis</strong> &nbsp;·&nbsp; 3 repos</summary>
+<summary><strong>Data Science & Analysis</strong> &nbsp;·&nbsp; 4 repos</summary>
 
 <br>
 
@@ -105,6 +105,13 @@ Three curated sequences for the most common starting points. Each repo builds on
   <td>INT</td>
   <td>Python basics, pandas basics</td>
   <td><kbd>dataset-audit</kbd> <kbd>fairness</kbd> <kbd>brisque</kbd> <kbd>pandas</kbd> <kbd>image-quality</kbd></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/ehcastroh-teach/Signals_Correlation">Signals_Correlation</a></td>
+  <td>Introduction to correlation analysis in Python - Pearson, Spearman, and Kendall-tau with NumPy, Pandas, and SciPy.</td>
+  <td>INT</td>
+  <td>NumPy_Introduction, Pandas_Data_Analysis</td>
+  <td><kbd>correlation</kbd> <kbd>pearson</kbd> <kbd>spearman</kbd> <kbd>kendall</kbd> <kbd>statistics</kbd></td>
 </tr>
 </table>
 
