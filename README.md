@@ -42,7 +42,7 @@ Three curated sequences for the most common starting points. Each repo builds on
 ## Index
 
 <details open>
-<summary><strong>Foundations</strong> &nbsp;·&nbsp; 2 repos</summary>
+<summary><strong>Foundations</strong> &nbsp;·&nbsp; 3 repos</summary>
 
 <br>
 
@@ -67,6 +67,13 @@ Three curated sequences for the most common starting points. Each repo builds on
   <td>BEG</td>
   <td>Python basics, NumPy basics</td>
   <td><kbd>pandas</kbd> <kbd>dataframes</kbd> <kbd>eda</kbd> <kbd>csv</kbd> <kbd>groupby</kbd></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/ehcastroh-teach/Customer_Onboarding_Discrete_Simulation">Customer_Onboarding_Discrete_Simulation</a></td>
+  <td>Model multi-server queues with SimPy to simulate onboarding workflows, analyze wait times, and apply Little's Law and server utilization.</td>
+  <td>BEG</td>
+  <td>Basic Python</td>
+  <td><kbd>SimPy</kbd> <kbd>discrete event simulation</kbd> <kbd>queueing theory</kbd> <kbd>customer onboarding</kbd> <kbd>Python</kbd></td>
 </tr>
 </table>
 
