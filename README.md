@@ -363,6 +363,12 @@ Reference documents that support the material across repos. Grouped by category;
 |:---|:---|
 | [Agents, Bash, and the CLI](Resources/Reference%20%26%20Cheat%20Sheets/agent-bash-cli-reference.md) | Working reference for building and operating AI agents through a shell - command lookup by task, hardened script patterns, output discipline, exit-code semantics, and the safety model. |
 
+### Agent Best Practices - Quick Reference
+
+| Document | Description |
+|:---|:---|
+| [Agent Best Practices Summary](Resources/Agent%20Best%20Practices/00-agent-best-practices-summary.md) | Condensed best practices for building, combining, and reviewing agent tools, skills, hooks, harnesses, retrieval systems, sandboxes, and evals - two parts covering per-component rules and cross-stack synergies. Paste into a session or reference directly; not a tutorial. |
+
 ### Agent Best Practices - Fundamentals
 
 | # | Document | Description |
@@ -427,4 +433,4 @@ These materials are actively maintained. Bug reports and suggestions belong on t
 
 <br>
 
-<sub>Last updated: 2026-08-31</sub>
+<sub>Last updated: 2026-09-02</sub>
