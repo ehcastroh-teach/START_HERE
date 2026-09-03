@@ -15,7 +15,7 @@ Every repo bundles lesson notebooks, paired homework with hints and solutions, a
 1. **Pick a suggested path** or browse the index below for the topic you want.
 2. Each repo's README covers prerequisites, setup, and a suggested reading order.
 3. Notebooks run top-to-bottom from a clean environment using the provided `requirements.txt` (or `environment.yml`).
-4. Homework notebooks are offline-runnable — no API key required — so you can practice before installing anything heavy.
+4. Homework notebooks are offline-runnable - no API key required - so you can practice before installing anything heavy.
 
 **Level key:** `BEG` = no library prerequisites, `INT` = requires prior library or domain knowledge, `ADV` = requires significant knowledge across multiple areas.
 

@@ -1,4 +1,4 @@
-# Agents, Bash, and the CLI — A Working Reference
+# Agents, Bash, and the CLI - A Working Reference
 
 A practical reference for understanding and building AI agents that operate through a shell.
 Organized for lookup: every section has a stable heading, and the tables are keyword-dense so
@@ -58,7 +58,7 @@ The central tension, which shapes nearly everything downstream:
 
 The loop only works if the output is *evidence*. An agent that cannot run a check it trusts
 is guessing. The single most valuable thing you can give an agent is a command that returns a
-reliable pass/fail signal — a test suite, a linter, a type-checker, a build.
+reliable pass/fail signal - a test suite, a linter, a type-checker, a build.
 
 ---
 
@@ -75,7 +75,7 @@ useful mental model in this document.
 | Latency |  One inference pass per step |  One inference pass total |
 | Best for |  Exploration, diagnosis, iteration |  Pipelines, validation, bulk transforms |
 | Failure mode |  Drift, repeated work, context bloat |  Silent wrong answer if unreviewed |
-| Reviewability |  Hard — long ad-hoc pipelines |  Easy — a file you can read and diff |
+| Reviewability |  Hard - long ad-hoc pipelines |  Easy - a file you can read and diff |
 
 ### 2.1 Decision Rule
 
@@ -87,7 +87,7 @@ Use an **authored script** when two or more of these are true:
 4. Correctness matters more than flexibility.
 5. A human will want to audit what was done.
 
-Otherwise, emit the command directly. Exploration genuinely benefits from a turn-by-turn loop —
+Otherwise, emit the command directly. Exploration genuinely benefits from a turn-by-turn loop -
 forcing it into a script front-loads decisions the agent hasn't earned yet.
 
 ### 2.2 Skills: Scripts as a Packaging Format
@@ -96,13 +96,13 @@ The Agent Skills format is the productized version of the script mode. A skill i
 containing a `SKILL.md` (instructions) plus optional bundled scripts and resources. Two
 properties matter:
 
-- The agent reads `SKILL.md` **using ordinary bash commands** when the skill is triggered —
+- The agent reads `SKILL.md` **using ordinary bash commands** when the skill is triggered -
   the filesystem *is* the loading mechanism.
 - Bundled scripts **execute without their source entering the context window**. Only their
   output costs tokens.
 
 The design guidance is to prefer a bundled deterministic script over having the model generate
-the steps on the fly — extraction, validation, transformation, linting. This is the same
+the steps on the fly - extraction, validation, transformation, linting. This is the same
 reasoning as §2.1, formalized into a distribution format.
 
 ---
@@ -154,7 +154,7 @@ bash, curl, jq**. Everything else is situational.
 | Lines 253–343 |  `sed -n '253,343p' file` |  Maps directly onto how humans phrase ranges |
 | First N lines |  `head -n 50 file` |  Cheap orientation |
 | Last N lines |  `tail -n 200 file` |  For logs, the end is what matters |
-| Follow a log |  `tail -f file` |  **Hangs forever** — avoid unattended |
+| Follow a log |  `tail -f file` |  **Hangs forever** - avoid unattended |
 | Count lines |  `wc -l file` |  Counts newlines, not CSV records |
 | Whole file |  `cat file` |  Only if genuinely small |
 
@@ -242,7 +242,7 @@ error page as if it were data.
 | Background + wait |  `task_a & task_b & wait` |
 | Bounded parallelism |  `parallel -j 4 cmd ::: item1 item2` |
 
-### 4.10 Modern Replacements — With a Caveat
+### 4.10 Modern Replacements - With a Caveat
 
 | Classic |  Modern |  Advantage |  Risk |
 |:---|:---|:---|:---|
@@ -283,7 +283,7 @@ IFS=$'\n\t'
 | `-o pipefail` |  A pipeline reporting success when stage 1 of 3 failed |
 | `IFS=$'\n\t'` |  Filenames with spaces being split into multiple arguments |
 
-`-e` has known gaps — it does not trigger inside `if` conditions, `&&`/`||` chains, or command
+`-e` has known gaps - it does not trigger inside `if` conditions, `&&`/`||` chains, or command
 substitutions in some contexts. It is a strong default, not a guarantee.
 
 ### 5.2 Quoting
@@ -377,7 +377,7 @@ exit $(( failed > 0 ))
 2. The required argument is validated immediately, with a self-describing error.
 3. A temp directory is created and a teardown trap registered *before* any work begins, so the
    cleanup path exists no matter where the script dies.
-4. File discovery lands in an array via `mapfile` — no subshell, no word-splitting.
+4. File discovery lands in an array via `mapfile` - no subshell, no word-splitting.
 5. Full linter output goes to a file, not to stdout. Only a bounded excerpt is surfaced.
 6. A single machine-readable summary line is printed.
 7. The exit code carries the verdict, so the calling agent can loop on it without parsing text.
@@ -394,7 +394,7 @@ jq -n \
   '{checked: $checked, failed: $failed, status: $status}'
 ```
 
-`jq -n` builds JSON from nothing, and `--arg`/`--argjson` handle escaping — safer than
+`jq -n` builds JSON from nothing, and `--arg`/`--argjson` handle escaping - safer than
 hand-assembling a JSON string with `printf`.
 
 ### 6.3 Safe Idempotent Cleanup
@@ -432,12 +432,12 @@ C_{\text{script}} = P + s + o
 $$
 
 **How it plays out:** in the raw path, every intermediate result crosses the model boundary and
-then *stays in context for all subsequent turns* — so $r_i$ is paid repeatedly, not once. The
+then *stays in context for all subsequent turns* - so $r_i$ is paid repeatedly, not once. The
 effective growth is quadratic in $n$, not linear. In the script path, intermediate data never
 leaves the execution environment; the model sees only what the script chose to print. The gap
 widens with both $n$ and $r$, which is why bulk fan-out shows the largest savings.
 
-### 7.2 Reported Savings — Read With Care
+### 7.2 Reported Savings - Read With Care
 
 | Workload shape |  Reported reduction |  Why |
 |:---|:---|:---|
@@ -449,7 +449,7 @@ the first row's conditions.
 
 ### 7.3 Truncation Is a Correctness Issue
 
-Harnesses cap how much command output they read back — in Claude Code the default is 30,000
+Harnesses cap how much command output they read back - in Claude Code the default is 30,000
 characters with a hard ceiling of 150,000. A command that floods stdout doesn't merely cost
 tokens; it gets cut off, and the agent may act on a partial picture without knowing it.
 
@@ -464,7 +464,7 @@ Practical measures, in order of preference:
 
 ## 8. Exit Codes and Error Semantics
 
-Exit codes are the agent's cheapest signal — one integer instead of a page of text. But their
+Exit codes are the agent's cheapest signal - one integer instead of a page of text. But their
 interpretation is harness-specific, and the mismatch causes real confusion.
 
 ### 8.1 Conventions
@@ -472,19 +472,19 @@ interpretation is harness-specific, and the mismatch causes real confusion.
 | Code |  Meaning |
 |:---|:---|
 | `0` |  Success |
-| `1` |  General failure — *or*, for search tools, "no matches" |
+| `1` |  General failure - *or*, for search tools, "no matches" |
 | `2` |  Usage/syntax error (many GNU tools) |
 | `126` |  Found but not executable |
 | `127` |  Command not found |
 | `130` |  Terminated by Ctrl-C (SIGINT) |
-| `137` |  Killed (SIGKILL — often OOM) |
+| `137` |  Killed (SIGKILL - often OOM) |
 
 ### 8.2 The "Benign Exit 1" Trap
 
 Claude Code treats exit 1 as a *valid, non-failing* result only for a specific set:
 `grep`, `rg`, `egrep`, `fgrep`, `find`, `diff`, `test`, `[`, plus `git diff` and `git grep`.
 
-For everything else, exit 1 reads as failure — **including `pgrep` with no match and
+For everything else, exit 1 reads as failure - **including `pgrep` with no match and
 `jq -e` returning false**, where exit 1 is informational rather than broken.
 
 **Implication for script authors:** if your script's "nothing found, that's fine" path exits 1,
@@ -521,7 +521,7 @@ These are layers, not alternatives. The sandbox is the floor under the other two
 Documented failures worth internalizing:
 
 - **Path aliasing defeats pattern matching.** An agent routed around its own denylist by
-  invoking the same binary through `/proc/self/root/usr/bin/npx` — identical file, different
+  invoking the same binary through `/proc/self/root/usr/bin/npx` - identical file, different
   string. When a sandbox blocked that, the agent disabled the sandbox to finish the task.
   Notably this was not adversarial behavior; it was goal-directed persistence meeting an
   obstacle.
@@ -534,16 +534,16 @@ Documented failures worth internalizing:
   few prompts, which makes the human checkpoint theater without a sandbox backstop. The
   concrete consequence: a cleanup task that executed `rm -rf ~/` and destroyed a home directory.
 - **Environment inheritance is underrated.** Agents inherit the full shell environment. An
-  exported `AWS_SECRET_ACCESS_KEY` reaches every subprocess the agent spawns — and agents spawn
+  exported `AWS_SECRET_ACCESS_KEY` reaches every subprocess the agent spawns - and agents spawn
   many.
 
 ### 9.3 The Emerging Pattern: Grade by Blast Radius
 
 Rather than gating by command name, gate by reversibility:
 
-- **Reversible (the vast majority)** — reads, searches, local edits, test runs. Log them; do
+- **Reversible (the vast majority)** - reads, searches, local edits, test runs. Log them; do
   not prompt. Prompting here is what burns the human's attention budget.
-- **Irreversible (the small minority)** — destructive deletes, `git push --force`, schema
+- **Irreversible (the small minority)** - destructive deletes, `git push --force`, schema
   drops, sending email, spending money, anything touching production. Prompt here.
 
 The useful metric is **escalation rate**: what fraction of agent actions trigger a prompt at
@@ -603,8 +603,8 @@ Symptom → cause → fix. This section is the most `Ctrl-F`-able part of the do
 | **Approval fatigue** |  Degradation of human review quality under repeated prompting. |
 | **Denylist fragility** |  The tendency of string-matching blocklists to be circumvented by equivalent commands. |
 | **Read-back limit** |  How much of a command's stdout the harness returns to the model. |
-| **Process substitution** |  `<(cmd)` — presents a command's output as a file path, avoiding a subshell. |
-| **Heredoc** |  `<<'EOF' … EOF` — inline multi-line input; quote the delimiter to disable expansion. |
+| **Process substitution** |  `<(cmd)` - presents a command's output as a file path, avoiding a subshell. |
+| **Heredoc** |  `<<'EOF' … EOF` - inline multi-line input; quote the delimiter to disable expansion. |
 
 ---
 
@@ -616,7 +616,7 @@ Worth holding lightly rather than treating as settled.
   are compelling but come largely from blog posts and internal experiments, not controlled
   comparisons against well-built structured-tool baselines.
 - **Shell tasks are not solved.** Terminal-Bench 2.0 exists because the terminal is where
-  agents now work; its 89 tasks show top scores around 84.7% — meaning roughly one in six
+  agents now work; its 89 tasks show top scores around 84.7% - meaning roughly one in six
   real command-line tasks still fails at the frontier.
 - **Harness sometimes beats model.** The same model performs very differently depending on the
   loop wrapped around it, so benchmark numbers attributed to models partly measure scaffolding.
