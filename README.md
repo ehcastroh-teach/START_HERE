@@ -271,7 +271,7 @@ Three curated sequences for the most common starting points. Each repo builds on
 </details>
 
 <details>
-<summary><strong>AI Tooling & Environment</strong> &nbsp;·&nbsp; 3 repos</summary>
+<summary><strong>AI Tooling & Environment</strong> &nbsp;·&nbsp; 2 repos</summary>
 
 <br>
 
