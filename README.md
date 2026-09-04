@@ -271,7 +271,7 @@ Three curated sequences for the most common starting points. Each repo builds on
 </details>
 
 <details>
-<summary><strong>AI Tooling & Environment</strong> &nbsp;·&nbsp; 2 repos</summary>
+<summary><strong>AI Tooling & Environment</strong> &nbsp;·&nbsp; 3 repos</summary>
 
 <br>
 
@@ -296,6 +296,13 @@ Three curated sequences for the most common starting points. Each repo builds on
   <td>INT</td>
   <td>Linux CLI</td>
   <td><kbd>llm</kbd> <kbd>llama-cpp</kbd> <kbd>local-inference</kbd> <kbd>gpu</kbd> <kbd>quantization</kbd></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/ehcastroh-teach/Agents_and_Workflows">Agents_and_Workflows</a></td>
+  <td>Build and classify LLM workflows and agents: covers all seven canonical patterns plus a five-factor rubric for choosing the right architecture.</td>
+  <td>INT</td>
+  <td>Python (intermediate), LLM API basics, basic prompt engineering</td>
+  <td><kbd>agents</kbd> <kbd>workflows</kbd> <kbd>LLM patterns</kbd> <kbd>ReAct</kbd> <kbd>multi-agent</kbd></td>
 </tr>
 </table>
 
