@@ -302,7 +302,7 @@ Three curated sequences for the most common starting points. Each repo builds on
 </details>
 
 <details>
-<summary><strong>Applied AI & Generative AI</strong> &nbsp;·&nbsp; 3 repos</summary>
+<summary><strong>Applied AI & Generative AI</strong> &nbsp;·&nbsp; 2 repos</summary>
 
 <br>
 
@@ -327,13 +327,6 @@ Three curated sequences for the most common starting points. Each repo builds on
   <td>INT</td>
   <td>Python basics, OpenAI API basics</td>
   <td><kbd>agent-evals</kbd> <kbd>llm</kbd> <kbd>openai</kbd> <kbd>arize-phoenix</kbd> <kbd>edd</kbd></td>
-</tr>
-<tr>
-  <td><a href="https://github.com/ehcastroh-teach/Agent_Extension_Primitives">Agent_Extension_Primitives</a></td>
-  <td>Teaches the five Claude agent extension primitives (prompts, skills, hooks, MCP, RAG) as a decision framework with working Python implementations</td>
-  <td>INT</td>
-  <td>Claude API basics (Claude_Certified_Developer_Foundations recommended)</td>
-  <td><kbd>prompts</kbd> <kbd>skills</kbd> <kbd>hooks</kbd> <kbd>MCP</kbd> <kbd>RAG</kbd></td>
 </tr>
 </table>
 
