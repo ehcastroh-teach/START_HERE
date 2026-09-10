@@ -302,7 +302,7 @@ Three curated sequences for the most common starting points. Each repo builds on
 </details>
 
 <details>
-<summary><strong>Applied AI & Generative AI</strong> &nbsp;·&nbsp; 2 repos</summary>
+<summary><strong>Applied AI & Generative AI</strong> &nbsp;·&nbsp; 3 repos</summary>
 
 <br>
 
@@ -327,6 +327,13 @@ Three curated sequences for the most common starting points. Each repo builds on
   <td>INT</td>
   <td>Python basics, OpenAI API basics</td>
   <td><kbd>agent-evals</kbd> <kbd>llm</kbd> <kbd>openai</kbd> <kbd>arize-phoenix</kbd> <kbd>edd</kbd></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/ehcastroh-teach/Claude_Certified_Developer_Foundations">Claude_Certified_Developer_Foundations</a></td>
+  <td>Claude API foundations for the CCDV-F exam - Messages API, agents, tool use, MCP, evals, and security, from raw calls to production-shaped code.</td>
+  <td>BEG</td>
+  <td>Python basics</td>
+  <td><kbd>anthropic-api</kbd> <kbd>agents</kbd> <kbd>mcp</kbd> <kbd>tool-calling</kbd> <kbd>evals</kbd></td>
 </tr>
 </table>
 
