@@ -271,7 +271,7 @@ Three curated sequences for the most common starting points. Each repo builds on
 </details>
 
 <details>
-<summary><strong>AI Tooling & Environment</strong> &nbsp;·&nbsp; 2 repos</summary>
+<summary><strong>AI Tooling & Environment</strong> &nbsp;·&nbsp; 3 repos</summary>
 
 <br>
 
@@ -296,6 +296,13 @@ Three curated sequences for the most common starting points. Each repo builds on
   <td>INT</td>
   <td>Linux CLI</td>
   <td><kbd>llm</kbd> <kbd>llama-cpp</kbd> <kbd>local-inference</kbd> <kbd>gpu</kbd> <kbd>quantization</kbd></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/ehcastroh-teach/NVIDIA_Certified_AI_Infra_and_Ops_Fundamentals">NVIDIA_Certified_AI_Infra_and_Ops_Fundamentals</a></td>
+  <td>AI infrastructure and operations for the NCA-AIIO exam - GPU hardware, data centers, networking, DPUs, cluster orchestration, and monitoring.</td>
+  <td>INT</td>
+  <td>None</td>
+  <td><kbd>nvidia</kbd> <kbd>gpu-architecture</kbd> <kbd>data-center</kbd> <kbd>cluster-management</kbd> <kbd>ai-infrastructure</kbd></td>
 </tr>
 </table>
 
