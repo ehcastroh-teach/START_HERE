@@ -366,6 +366,13 @@ Three curated sequences for the most common starting points. Each repo builds on
   <td>Python basics, Claude familiarity</td>
   <td><kbd>agent-skills</kbd> <kbd>claude-code</kbd> <kbd>anthropic-api</kbd> <kbd>agent-sdk</kbd> <kbd>skill-creator</kbd></td>
 </tr>
+<tr>
+  <td><a href="https://github.com/ehcastroh-teach/Claude_Certified_Developer_Foundations">Claude_Certified_Developer_Foundations</a></td>
+  <td>Claude API foundations for the CCDV-F exam - Messages API, agents, tool use, MCP, evals, and security, from raw calls to production-shaped code.</td>
+  <td>BEG</td>
+  <td>Python basics</td>
+  <td><kbd>anthropic-api</kbd> <kbd>agents</kbd> <kbd>mcp</kbd> <kbd>tool-calling</kbd> <kbd>evals</kbd></td>
+</tr>
 </table>
 
 </details>
