@@ -271,7 +271,7 @@ Three curated sequences for the most common starting points. Each repo builds on
 </details>
 
 <details>
-<summary><strong>AI Tooling & Environment</strong> &nbsp;·&nbsp; 2 repos</summary>
+<summary><strong>AI Tooling & Environment</strong> &nbsp;·&nbsp; 3 repos</summary>
 
 <br>
 
@@ -296,6 +296,13 @@ Three curated sequences for the most common starting points. Each repo builds on
   <td>INT</td>
   <td>Linux CLI</td>
   <td><kbd>llm</kbd> <kbd>llama-cpp</kbd> <kbd>local-inference</kbd> <kbd>gpu</kbd> <kbd>quantization</kbd></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/ehcastroh-teach/MCP_ArXiv_Chatbot">MCP_ArXiv_Chatbot</a></td>
+  <td>Build MCP servers and clients, deploy remotely, and add RAG over a GitHub org - hand-rolled to real SDK to production.</td>
+  <td>INT</td>
+  <td>Python basics, JSON basics</td>
+  <td><kbd>mcp</kbd> <kbd>tool-calling</kbd> <kbd>rag</kbd> <kbd>embeddings</kbd> <kbd>agentic-systems</kbd></td>
 </tr>
 </table>
 
