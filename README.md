@@ -309,7 +309,7 @@ Three curated sequences for the most common starting points. Each repo builds on
 </details>
 
 <details>
-<summary><strong>Applied AI & Generative AI</strong> &nbsp;·&nbsp; 4 repos</summary>
+<summary><strong>Applied AI & Generative AI</strong> &nbsp;·&nbsp; 3 repos</summary>
 
 <br>
 
@@ -341,13 +341,6 @@ Three curated sequences for the most common starting points. Each repo builds on
   <td>BEG</td>
   <td>Python basics</td>
   <td><kbd>anthropic-api</kbd> <kbd>agents</kbd> <kbd>mcp</kbd> <kbd>tool-calling</kbd> <kbd>evals</kbd></td>
-</tr>
-<tr>
-  <td><a href="https://github.com/ehcastroh-teach/AI_Agent_Skills">AI_Agent_Skills</a></td>
-  <td>Claude agent skills from concept to code - SKILL.md anatomy, prebuilt and custom skills, Claude Code, Messages API, and Agent SDK</td>
-  <td>INT</td>
-  <td>Python basics, Claude familiarity</td>
-  <td><kbd>agent-skills</kbd> <kbd>claude-code</kbd> <kbd>anthropic-api</kbd> <kbd>agent-sdk</kbd> <kbd>skill-creator</kbd></td>
 </tr>
 </table>
 
