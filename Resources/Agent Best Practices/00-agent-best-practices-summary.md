@@ -1,6 +1,6 @@
 ---
 name: agent-build-best-practices
-description: Condensed best practices for building, combining, and reviewing agent tools, skills, hooks, harnesses, retrieval systems, sandboxes, and evals. Two parts - per-component rules and cross-stack synergies - meant to be pasted into a session or referenced directly, not read as a tutorial. Use whenever the task is to build or review any component of an agent system, or to check whether several components combined introduce a risk none of them has alone.
+description: Condensed best practices for building, combining, and reviewing agent tools, skills, hooks, plugins, harnesses, retrieval systems, sandboxes, and evals. Two parts - per-component rules and cross-stack synergies - meant to be pasted into a session or referenced directly, not read as a tutorial. Use whenever the task is to build or review any component of an agent system, or to check whether several components combined introduce a risk none of them has alone.
 ---
 
 # Best Practices - Per Component and Across the Stack
@@ -9,7 +9,9 @@ description: Condensed best practices for building, combining, and reviewing age
 
 ## Part 1 - Per-component best practices
 
-Three highest-leverage rules per component, condensed from the full checklists in `01`–`18`. Read the source file for the reasoning; this is the distilled form for quick reference or pasting into a prompt.
+Three highest-leverage rules per component, condensed from the full checklists in `01`–`14` and `19`. Read the source file for the reasoning; this is the distilled form for quick reference or pasting into a prompt. Entries `15`–`18` are digest-only - see the note at each one.
+
+For hands-on authoring of a skill, hook, plugin, or command specifically, `00-skills-hooks-plugins-commands-quickref.md` is the faster single-page lookup (current frontmatter fields, manifest schemas, exit codes); this file is the broader index across the whole stack.
 
 **`01` Prompt engineering**
 1. State the desired output format explicitly; never assume the model will infer it from context alone.
@@ -81,25 +83,30 @@ Three highest-leverage rules per component, condensed from the full checklists i
 2. Weigh the ~15x token cost against the task's actual shape - reserve decomposition for genuinely breadth-first, independent work, not sequential tasks wearing a parallel disguise.
 3. Choose a result-aggregation strategy deliberately (concatenate, rank, reduce, or a dedicated synthesis pass) - don't default to concatenation for outputs that actually need reconciling.
 
-**`15` Scripts**
+**`15` Scripts** *(digest only - no standalone file yet)*
 1. Run the three-question mapping test (same steps every time, rule-checkable branches, single correct output) before scripting - a "no" on any one means the step needs agent judgment, not code.
 2. Keep script output a short, structured, single success signal - a verbose dump reintroduces the interpretation cost the script was meant to remove.
 3. Don't script a workflow before watching it run correctly and consistently across several real agent turns first - a wrong-but-fast script fails silently, which is worse than a slow agent that can self-correct.
 
-**`16` References**
+**`16` References** *(digest only - no standalone file yet)*
 1. Move content to a reference only if it's needed occasionally mid-task - content needed to decide whether the skill applies at all stays in the `SKILL.md` body.
 2. Keep every reference one level deep - an agent's partial-read preview won't reliably follow a pointer to a second reference nested inside the first.
 3. Partition by domain into separate, independently-useful files rather than one long reference - a task in one domain should load nothing from another.
 
-**`17` Assets**
+**`17` Assets** *(digest only - no standalone file yet)*
 1. Test with "would reading this file's content help the model decide what to do, or does it just need to use the file?" - the second case is an asset, always.
 2. Never describe an asset's content redundantly in prose - point at its path in one line instead of transcribing what's inside it.
 3. Keep any real logic touching an asset in a script, not in the asset itself and not spelled out as `SKILL.md` instructions - the asset stays static.
 
-**`18` Skill pruning and ablation**
+**`18` Skill pruning and ablation** *(digest only - no standalone file yet)*
 1. Settle no-op questions empirically, by running the skill with and without the line - never by reading the sentence and deciding it sounds vague.
 2. Run without-tests in genuinely clean context: a session that merely *discussed* the skill is contaminated even if the skill was never invoked.
 3. Prune the description harder than the body - it costs context on every turn, not just on the turns the skill fires.
+
+**`19` Plugins**
+1. A plugin manifest needs only `name` (kebab-case) - everything else, including the manifest file itself, is optional and falls back to directory auto-discovery.
+2. Installing a plugin means trusting every hook, MCP server, and skill it bundles to run with the same standing as if you'd written them yourself - review it with `03`'s third-party audit bar, not a lighter one, because one install action grants all of it at once.
+3. Use `${CLAUDE_PLUGIN_ROOT}` for bundled scripts/binaries and `${CLAUDE_PLUGIN_DATA}` for anything that must survive a plugin update - hardcoding an install path breaks on the next update.
 
 ## Part 2 - Synergies: what's only true once components combine
 
@@ -115,7 +122,7 @@ These don't belong to any single file's checklist because no single component pr
 
 **S5. Evals (`13`) validate every other component, but only as thoroughly as the layer you chose to check.** A tool that passes its Layer 0 schema test and a harness that passes its Layer 2 trajectory test can still fail together at Layer 3 if the failure only emerges from their interaction - a correctly-selected tool called with a subtly wrong argument constructed by an otherwise-sound reasoning trace. Component-level passes are necessary, never sufficient, for system-level confidence. Budget for at least one eval layer above whichever one the immediate task seems to require.
 
-**S6. The security chain (`Relationships` §4) means a single-file review is a partial review.** Vetting a skill (`03`) that connects to an MCP server (`06`) which is itself protected by a hook (`11`) inside a sandbox (`09`/`12`) requires reading all four checklists, because the actual incidents on record are chain failures - a gap in one layer that the others didn't happen to cover, not a single checklist item anyone skipped. When a task touches more than one of these four files, treat that as the signal to read all of them, not just the one that named the task.
+**S6. The security chain (`Relationships` §4) means a single-file review is a partial review.** Vetting a skill (`03`) that connects to an MCP server (`06`) which is itself protected by a hook (`11`) inside a sandbox (`09`/`12`) requires reading all four checklists, because the actual incidents on record are chain failures - a gap in one layer that the others didn't happen to cover, not a single checklist item anyone skipped. A plugin (`19`) collapses this whole chain into a single install action - it can ship a skill, an MCP server, and a hook together, which means installing one plugin is the highest-leverage point to apply all four checklists at once, not a lighter-weight action than adding each piece separately. When a task touches more than one of these files, treat that as the signal to read all of them, not just the one that named the task.
 
 **S7. "Prefer the smallest destination" (`00`'s placement rubric) and "diagnose at the lowest layer" (`13`'s bottom-up rule) are the same discipline applied at build time versus debug time.** Building: don't reach for a harness when a skill would do. Debugging: don't assume a system-level fix when the root cause is one prompt. Both mistakes come from looking at the top of the stack first because that's where the symptom or the ambition is visible - the fix in both directions is checking the smallest, lowest unit before escalating.
 
@@ -130,4 +137,4 @@ These don't belong to any single file's checklist because no single component pr
 **S12. Every rule in this document is itself subject to `18`'s no-op test, including this one.** The uncomfortable implication of taking pruning seriously: guidance that was load-bearing against one model generation can become a no-op against the next, and this manifesto is guidance. `07`'s "ask what you can stop doing" applies to harness scaffolding; `18` applies it to skill content; the same logic applies to the reference set itself. Concretely - if a future model reliably resolves opaque IDs to names unprompted (`02`), or defaults to private-then-verify when publishing (`09`), those rules become documentation of history rather than instruction. Re-test the highest-leverage rules periodically against the model you're actually running, and treat a rule's continued survival as evidence rather than assumption.
 
 ---
-*Companion to `00-agent-build-guidance.md` and the 18-file reference set. Part 1 is a condensed digest - read the source file for the full checklist and reasoning. Part 2 exists only here; it isn't duplicated in any single topic file, by construction.*
+*Companion to the numbered reference set (`01`–`14`, `19`; `15`–`18` are digest-only, not yet split into their own files). Part 1 is a condensed digest - read the source file for the full checklist and reasoning where one exists. Part 2 exists only here; it isn't duplicated in any single topic file, by construction. For skills, hooks, plugins, and commands specifically, see the companion `00-skills-hooks-plugins-commands-quickref.md`.*

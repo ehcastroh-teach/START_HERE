@@ -1,10 +1,12 @@
 # Skills
 
-Personal reference notes. Sources: [Claude Platform Docs - Agent Skills overview](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview) and [best practices](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices), plus the [agent skills open standard](https://agentskills.io). Security figures: [Snyk's ToxicSkills audit, Feb 2026](https://snyk.io/blog/toxicskills-malicious-ai-agent-skills-clawhub/).
+Personal reference notes. Sources: [Claude Platform Docs - Agent Skills overview](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/overview) and [best practices](https://platform.claude.com/docs/en/agents-and-tools/agent-skills/best-practices), plus the [agent skills open standard](https://agentskills.io) and the [Claude Code Skills reference](https://code.claude.com/docs/en/skills.md) for the Claude-Code-specific frontmatter fields in §3. Security figures: [Snyk's ToxicSkills audit, Feb 2026](https://snyk.io/blog/toxicskills-malicious-ai-agent-skills-clawhub/).
 
 ## 1. What a skill is
 
 A **skill** teaches the model a procedure or convention for something it can already do - as opposed to a **tool**, which extends what it can do at all (see `02-tools.md`). A skill is a folder, not a prompt snippet: `SKILL.md` plus optional `references/`, `scripts/`, and `assets/`.
+
+In Claude Code specifically, **custom slash commands and skills are the same mechanism**: a flat file at `.claude/commands/deploy.md` and a folder at `.claude/skills/deploy/SKILL.md` both create `/deploy` and behave identically at the invocation level. A skill folder is the superset - it adds a place for supporting files and the invocation-control frontmatter in §3. Reach for a flat command file only when there's genuinely nothing to bundle and no invocation control needed; otherwise a skill folder costs nothing extra and leaves room to grow.
 
 ```
 skill-name/
@@ -28,8 +30,26 @@ Only `name` and `description` are loaded at startup for *every* installed skill.
 ## 3. Frontmatter rules (the part that fails silently)
 
 - `name`: 1–64 chars, lowercase letters/numbers/hyphens only, no leading/trailing/consecutive hyphens, **must exactly match the parent folder name** or the skill silently fails to load. Gerund form reads well (`processing-pdfs`, `reviewing-contracts`). Avoid `helper`/`utils`. No `anthropic`/`claude` in the name. No XML tags in either field.
-- `description`: 1–1024 chars, **third person**, states *what it does and when to use it* using real trigger vocabulary. First/second person phrasing ("I can help you...") measurably hurts discovery because the text gets injected into a system prompt verbatim.
-- Optional: `license`, `compatibility`, `metadata`, `allowed-tools` (experimental pre-approval list), `disable-model-invocation` (command-only skill - never auto-triggers on a description match, only on explicit user request; use for heavyweight or side-effecting workflows where a false trigger is costly).
+- `description`: **third person**, states *what it does and when to use it* using real trigger vocabulary. First/second person phrasing ("I can help you...") measurably hurts discovery because the text gets injected into a system prompt verbatim. `description` plus `when_to_use` combined is truncated at 1,536 chars in the skill listing - put the key trigger phrase first. If omitted, `description` defaults to the first non-empty line of the body, which is rarely what you want.
+- `when_to_use`: optional, appended to `description` - extra trigger phrases or example requests, useful when the natural-language description reads better without them crammed in.
+
+Claude-Code-specific fields (beyond the open-standard core of `name`/`description`):
+
+| Field | Purpose |
+|:---|:---|
+| `disable-model-invocation` | User-only - Claude never auto-triggers it, only explicit invocation. Use for heavyweight or side-effecting workflows where a false trigger is costly. |
+| `user-invocable: false` | The inverse - Claude-only, hides the skill from the `/` menu. For background knowledge with no reason for a human to type it directly. |
+| `allowed-tools` / `disallowed-tools` | Pre-approve or remove specific tools for the turn that invokes the skill; the grant/removal clears at the next user message. |
+| `argument-hint` | Autocomplete hint shown to the user, e.g. `[issue-number]`. |
+| `arguments` | Named positional args (space-separated string or YAML list) bound to `$name` in the body, instead of parsing `$ARGUMENTS` by hand. |
+| `model` / `effort` | Override the session's model or effort level while the skill is active. |
+| `context: fork` + `agent` + `background` | Run the skill in an isolated subagent instead of the current context; `agent` picks the subagent type, `background: false` waits for the result inline instead of running detached. |
+| `paths` | Glob patterns that limit auto-activation to matching files being edited. |
+| `shell` | `bash` (default) or `powershell`, for `` !`command` `` execution inside the body. |
+| `hooks` | Hooks scoped to this skill's own lifecycle, auto-registered on invocation and cleaned up when it finishes - see `11-hooks.md` §6. |
+| `license` / `compatibility` / `metadata` | Part of the open agent-skills standard; Claude Code accepts but doesn't act on them itself. |
+
+Most of these exist to answer one question - **who can trigger this, and what does it need pre-approved when it does** - so when adding a field, check that question first rather than reaching for the table by habit.
 
 ## 4. Content rules
 
@@ -87,4 +107,4 @@ Minimum audit bar before running a third-party skill: read every file, inventory
 - [ ] Third-party content read line by line, permissions scoped to minimum
 
 ---
-*Part of a 12-file reference set: prompt engineering → tools → skills → context engineering → RAG → MCP → harness engineering → running LLMs locally → agent sandboxing → loop engineering → hooks → sandboxing.*
+*Part of a reference set: prompt engineering → tools → skills → context engineering → RAG → MCP → harness engineering → running LLMs locally → agent sandboxing → loop engineering → hooks → sandboxing → evals → agent orchestration → plugins (`19`). See also `00-skills-hooks-plugins-commands-quickref.md` for the condensed, field-by-field version of this file.*
